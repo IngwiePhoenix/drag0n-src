@@ -1,0 +1,2 @@
+001+ zend_mm_heap corrupted
+001- Warning: tidy::__construct(): Cannot Load '*' into memory%win %s on line %d

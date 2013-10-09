@@ -1,0 +1,14 @@
+001+ zend_mm_heap corrupted
+001- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+002- <html>
+003- <head>
+004- <title></title>
+005- 
+006- <style type="text/css">
+007-  p.c1 {font-weight: bold}
+008- </style>
+009- </head>
+010- <body>
+011- <p class="c1">testing</p>
+012- </body>
+013- </html>

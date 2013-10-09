@@ -1,0 +1,26 @@
+file::_get: something1
+array(1) {
+  [140735157084544]=>
+  resource(5) of type (stream)
+}
+file::_get: something2
+array(1) {
+  [140735157084544]=>
+  resource(5) of type (stream)
+}
+
+Warning: Zend OPcache can't be temporary enabled (it may be only disabled till the end of request) in Unknown on line 0
+file::_get: something3
+array(2) {
+  [140735157084544]=>
+  NULL
+  [4566577152]=>
+  resource(2) of type (stream)
+}
+file::_get: something4
+array(2) {
+  [140735157084544]=>
+  NULL
+  [4566577152]=>
+  resource(2) of type (stream)
+}

@@ -1,0 +1,4 @@
+bool(false)
+%Atesting: bool(true)
+testing: bool(true)
+bool(true)

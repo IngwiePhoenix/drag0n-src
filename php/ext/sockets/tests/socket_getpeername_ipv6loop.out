@@ -1,0 +1,2 @@
+Warning: socket_bind(): unable to bind address [48]: Address already in use in /Users/Ingwie/Work/drag0n-php/ext/sockets/tests/socket_getpeername_ipv6loop.php on line 14
+Unable to bind to ::1:31337

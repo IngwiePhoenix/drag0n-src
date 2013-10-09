@@ -1,0 +1,4 @@
+001+ Warning: Zend OPcache can't be temporary enabled (it may be only disabled till the end of request) in Unknown on line 0
+001- 
+002+ object(O)#2 (0) {
+003+ }

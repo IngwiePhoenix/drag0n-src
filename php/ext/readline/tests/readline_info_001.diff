@@ -1,0 +1,40 @@
+001+ array(6) {
+001- array(11) {
+008+   ["library_version"]=>
+009+   string(16) "EditLine wrapper"
+010+   ["readline_name"]=>
+011+   string(0) ""
+012+   ["attempted_completion_over"]=>
+008-   ["mark"]=>
+010-   ["done"]=>
+011-   int(0)
+012-   ["pending_input"]=>
+013-   int(0)
+014-   ["prompt"]=>
+015-   string(0) ""
+016-   ["terminal_name"]=>
+017-   string(0) ""
+018-   ["library_version"]=>
+014+ }
+015+ NULL
+016+ NULL
+017+ string(0) ""
+018+ string(0) ""
+019+ string(0) ""
+020+ string(1) "1"
+021+ int(0)
+022+ int(1)
+019-   string(%d) "%s"
+020-   ["readline_name"]=>
+021-   string(5) "other"
+022-   ["attempted_completion_over"]=>
+023-   int(0)
+024- }
+025- NULL
+026- NULL
+027- string(0) ""
+028- string(5) "other"
+029- string(5) "other"
+030- string(1) "1"
+031- int(0)
+032- int(1)

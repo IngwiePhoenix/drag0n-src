@@ -1,0 +1,4 @@
+sql::_query: SELECT * FROM mysql.user
+sql::_query: SELECT * FROM mysql.user
+sql::_query: SELECT * FROM mysql.user
+sql::_query: SELECT * FROM mysql.user

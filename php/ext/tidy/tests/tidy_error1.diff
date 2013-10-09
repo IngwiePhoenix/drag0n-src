@@ -1,0 +1,3 @@
+001+ zend_mm_heap corrupted
+001- Notice: tidy::parseString(): Unknown Tidy Configuration Option 'bogus' in %s on line %d
+002- bool(true)

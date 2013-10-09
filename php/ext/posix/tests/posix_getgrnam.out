@@ -1,0 +1,23 @@
+array(4) {
+  ["name"]=>
+  string(0) ""
+  ["passwd"]=>
+  string(0) ""
+  ["members"]=>
+  array(0) {
+  }
+  ["gid"]=>
+  int(0)
+}
+bool(false)
+array(4) {
+  ["name"]=>
+  string(0) ""
+  ["passwd"]=>
+  string(0) ""
+  ["members"]=>
+  array(0) {
+  }
+  ["gid"]=>
+  int(0)
+}

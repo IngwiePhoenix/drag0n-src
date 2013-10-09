@@ -1,0 +1,4 @@
+001+ Warning: socket_bind(): unable to bind address [48]: Address already in use in /Users/Ingwie/Work/drag0n-php/ext/sockets/tests/socket_getpeername_ipv4loop.php on line 14
+002+ Unable to bind to 127.0.0.1:31337
+001- string(9) "127.0.0.1"
+002- int(31337)

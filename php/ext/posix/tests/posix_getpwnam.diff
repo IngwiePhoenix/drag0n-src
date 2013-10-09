@@ -1,0 +1,34 @@
+002+ array(7) {
+003+   ["name"]=>
+002- bool(false)
+003- bool(false)
+004+   string(0) ""
+005+   ["passwd"]=>
+006+   string(0) ""
+007+   ["uid"]=>
+008+   int(0)
+009+   ["gid"]=>
+010+   int(0)
+011+   ["gecos"]=>
+012+   string(0) ""
+013+   ["dir"]=>
+014+   string(0) ""
+015+   ["shell"]=>
+016+   string(0) ""
+017+ }
+018+ array(7) {
+019+   ["name"]=>
+020+   string(0) ""
+021+   ["passwd"]=>
+022+   string(0) ""
+023+   ["uid"]=>
+024+   int(0)
+025+   ["gid"]=>
+026+   int(0)
+027+   ["gecos"]=>
+028+   string(0) ""
+029+   ["dir"]=>
+030+   string(0) ""
+031+   ["shell"]=>
+032+   string(0) ""
+033+ }
