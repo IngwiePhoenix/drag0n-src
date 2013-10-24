@@ -10,3 +10,6 @@
 [submodule "tools/dylibbundler"]
 	path = tools/dylibbundler
 	url = https://github.com/IngwiePhoenix/dylibbundler.git
+[submodule "third_party/apple"]
+	path = third_party/apple
+	url = https://github.com/opensource-apple/cctools
