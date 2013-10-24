@@ -4,3 +4,6 @@
 [submodule "tools/clang"]
 	path = tools/clang
 	url = http://llvm.org/git/clang.git
+[submodule "tools/ninja"]
+	path = tools/ninja
+	url = https://github.com/martine/ninja.git
