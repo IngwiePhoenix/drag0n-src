@@ -7,3 +7,6 @@
 [submodule "tools/ninja"]
 	path = tools/ninja
 	url = https://github.com/martine/ninja.git
+[submodule "tools/dylibbundler"]
+	path = tools/dylibbundler
+	url = https://github.com/IngwiePhoenix/dylibbundler.git
