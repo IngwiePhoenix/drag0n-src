@@ -1,0 +1,5 @@
+#!/bin/bash
+# Dramatically distclean everything O.O
+find .. -name Makefile | while read m; do
+	make --directory=$(dirname "$0") distclean
+done

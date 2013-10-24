@@ -5,7 +5,7 @@ include "utils.php";
 // drag0n configuration.
 // builds the build.ninja file
 
-$pwd = getcwd();
+$pwd = realpath(dirname(__FILE__).'/..');
 $ninja = '# drag0n ninja build
 
 # Basics
@@ -85,21 +85,35 @@ foreach(array(
 $ninja .= '# Build the backbone
 build php: unixMake
   flags = $
-    --with-curl='.$pwd.'/build/libcurl $
+	--enable-embed=static $
+	--enable-static=yes $
+	--enable-maintainer-zts $
+	--with-config-file-path="" $
+	--with-config-file-scan-dir="" $
+	--with-curl='.$pwd.'/build/libcurl $
     --with-xml='.$pwd.'/build/libxml $
     --with-pthreads='.$pwd.'/build/pth $
-    --with-gpgme='.$pwd.'/build/gpgme $
-    --enable-pthreads
+	--with-ssh2='.$pwd.'/build/ssh2 $
+	--with-gpg='.$pwd.'/build/libgpg $
+	--with-gnupg='.$pwd.'/build/gpgme $
+	--with-ncurses $
+	--with-tidy $
+	--with-libedit $
+	--with-curl='.$pwd.'/build/libcurl $
+	--with-mcrypt $
+	--enable-pthreads $
+	--enable-mbstring $
+	--enable-sockets $
+	--enable-ftp $
+	--enable-soap $
+	--enable-zip $
+	--enable-soap $
+	--enable-libxml $
+	--disable-opcache
 
 
 # Building the bundle by bootstrapping it via the script
-# subninja bundle/drag0n.ninja
-
-# Perform sanity checks on the bundle
-# build drag0n-test: exec ./wrapper/drag0n-test
-
-# Make everything clean
-# build cleanup: exec ./wrapper/make-distclean'."\n";
+# subninja bundle/drag0n.ninja'."\n";
 
 echo <<<NOTICE
 
@@ -119,7 +133,7 @@ switch(readline("Answer [1|2|3|4]> ")) {
 		$ninja .= "build chromium: exec $pwd/wrapper/chromium.bundle.sh";
 	break;
 	case 2:
-		$ninja .= "build chromium: exec $pwd/wrapper/chromium.gclient.sh";
+		$ninja .= "build chromium: exec $pwd/wrapper/chromium.git.sh";
 	break;
 	case 3:
 		$ninja .= "build chromium: exec $pwd/wrapper/chromium.update-bundle.sh";
@@ -131,5 +145,29 @@ switch(readline("Answer [1|2|3|4]> ")) {
 	break;
 }
 $ninja .= "\n";
+
+echo <<<NOTICE
+
+
+Another programm that drag0n needs to build itself is clang. We preffer clang over GCC/G++, and that is why we're going to bundle it later.
+But just like with Chromium, you may decide how you recieve or work with clang:
+
+	1: Download the source and build it fresh and clean
+	2: Use a precompiled binary
+
+
+NOTICE;
+switch(readline("Answer [1|2]> ")) {
+	case 1:
+		$ninja .= "build llvm: exec $pwd/wrapper/llvm.build.sh\n";
+		$ninja .= "build clang: exec $pwd/wrapper/clang.build.sh\n";
+	break;
+	default:
+		echo "Invaild answer given, choosing the default: Method 2.";
+	case 2:
+		$ninja .= "build clang: exec $pwd/wrapper/clang.download.sh\n";
+	break;
+}
+
 
 echo $ninja;
