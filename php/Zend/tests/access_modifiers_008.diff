@@ -1,2 +1,0 @@
-001+ B1::f()
-001- Fatal error: Call to protected method B1::f() from context 'B2' in %s on line %d

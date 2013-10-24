@@ -1,1 +1,0 @@
-/Users/Ingwie/Downloads/php-5.5.3/tests/security/test/bad/bad.txt

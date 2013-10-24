@@ -1,7 +1,0 @@
-bool(true)
-object(MyTidy)#%d (%d) {
-  ["errorBuffer"]=>
-  NULL
-  ["value"]=>
-  NULL
-}

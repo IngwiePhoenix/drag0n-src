@@ -1,6 +1,0 @@
-001+ zend_mm_heap corrupted
-001- line 1 column 1 - Warning: missing <!DOCTYPE> declaration
-002- line 1 column 7 - Error: <asd> is not recognized!
-003- line 1 column 7 - Warning: discarding unexpected <asd>
-004- line 1 column 17 - Warning: discarding unexpected </html>
-005- line 1 column 7 - Warning: inserting missing 'title' element

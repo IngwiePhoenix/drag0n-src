@@ -1,3 +1,0 @@
-Warning: tidy_repair_string(): Could not load configuration file '1' in /Users/Ingwie/Work/drag0n-php/ext/tidy/tests/022.php on line 7
-
-Warning: tidy_repair_string(): Could not set encoding '1' in /Users/Ingwie/Work/drag0n-php/ext/tidy/tests/022.php on line 7

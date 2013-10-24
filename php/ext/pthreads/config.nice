@@ -1,7 +1,0 @@
-#! /bin/sh
-#
-# Created by configure
-
-'./configure' \
-'--with-php-config=/Applications/drag0n/drag0n.app/Contents/System/bin/php-config' \
-"$@"

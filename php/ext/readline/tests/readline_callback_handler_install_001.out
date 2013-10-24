@@ -1,7 +1,0 @@
-bool(true)
-
-Warning: readline_callback_handler_install(): foobar! is not callable in /Users/Ingwie/Work/drag0n-php/ext/readline/tests/readline_callback_handler_install_001.php on line 8
-bool(false)
-
-Warning: readline_callback_handler_install() expects exactly 2 parameters, 1 given in /Users/Ingwie/Work/drag0n-php/ext/readline/tests/readline_callback_handler_install_001.php on line 9
-NULL

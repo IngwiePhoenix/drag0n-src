@@ -1,6 +1,0 @@
-sql::_query: SELECT * FROM mysql.user
-sql::_query: SELECT * FROM mysql.user
-
-Warning: Zend OPcache can't be temporary enabled (it may be only disabled till the end of request) in Unknown on line 0
-sql::_query: SELECT * FROM mysql.user
-sql::_query: SELECT * FROM mysql.user

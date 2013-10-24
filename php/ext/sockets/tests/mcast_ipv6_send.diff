@@ -1,4 +1,0 @@
-013+ 
-014+ Warning: socket_set_option(): unable to set socket option [49]: Can't assign requested address in /Users/Ingwie/Work/drag0n-php/ext/sockets/tests/mcast_ipv6_send.php on line 26
-015+ bool(false)
-013- bool(true)

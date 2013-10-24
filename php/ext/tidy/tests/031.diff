@@ -1,2 +1,0 @@
-001+ Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 170103864 bytes) in /Users/Ingwie/Work/drag0n-php/ext/tidy/tests/031.php on line 5
-001- int(%d)

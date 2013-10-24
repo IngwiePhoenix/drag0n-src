@@ -1,8 +1,0 @@
-array(2) {
-  ["bgcolor"]=>
-  string(7) "#FFFFFF"
-  ["alink"]=>
-  string(7) "#000000"
-}
-Attrib 'bgcolor': #FFFFFF
-Attrib 'alink': #000000

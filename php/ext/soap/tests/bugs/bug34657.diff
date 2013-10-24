@@ -1,2 +1,0 @@
-002+ SOAP-ERROR: Parsing WSDL: Couldn't find <definitions> in 'http://i_dont_exist.com/some.wsdl'
-002- SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://i_dont_exist.com/some.wsdl'%A
