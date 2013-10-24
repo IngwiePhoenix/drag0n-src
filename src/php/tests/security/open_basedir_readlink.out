@@ -1,0 +1,42 @@
+*** Testing open_basedir configuration [readlink] ***
+bool(true)
+
+Warning: is_dir(): open_basedir restriction in effect. File(/Users/Ingwie/Work/drag0n-php/tests/security/test/ok/symlink.txt) is not within the allowed path(s): (.) in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir.inc on line 43
+
+Warning: unlink(): open_basedir restriction in effect. File(/Users/Ingwie/Work/drag0n-php/tests/security/test/ok/symlink.txt) is not within the allowed path(s): (.) in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir.inc on line 47
+
+Warning: rmdir(/Users/Ingwie/Work/drag0n-php/tests/security/test/ok): Directory not empty in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir.inc on line 55
+
+Warning: rmdir(/Users/Ingwie/Work/drag0n-php/tests/security/test): Directory not empty in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir.inc on line 55
+
+Warning: mkdir(): File exists in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir.inc on line 64
+bool(false)
+
+Warning: mkdir(): File exists in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir.inc on line 65
+bool(false)
+bool(true)
+
+Warning: symlink(): open_basedir restriction in effect. File(/Users/Ingwie/Downloads/php-5.5.3/tests/security/test/bad/bad.txt) is not within the allowed path(s): (.) in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir_readlink.php on line 12
+bool(false)
+
+Warning: readlink(): open_basedir restriction in effect. File(symlink.txt) is not within the allowed path(s): (.) in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir_readlink.php on line 16
+bool(false)
+
+Warning: readlink(): open_basedir restriction in effect. File(../ok/symlink.txt) is not within the allowed path(s): (.) in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir_readlink.php on line 17
+bool(false)
+
+Warning: readlink(): open_basedir restriction in effect. File(../ok/./symlink.txt) is not within the allowed path(s): (.) in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir_readlink.php on line 18
+bool(false)
+
+Warning: readlink(): open_basedir restriction in effect. File(./symlink.txt) is not within the allowed path(s): (.) in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir_readlink.php on line 19
+bool(false)
+
+Warning: readlink(): open_basedir restriction in effect. File(/Users/Ingwie/Work/drag0n-php/tests/security/test/ok/symlink.txt) is not within the allowed path(s): (.) in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir_readlink.php on line 20
+bool(false)
+
+Warning: symlink(): open_basedir restriction in effect. File(/Users/Ingwie/Downloads/php-5.5.3/tests/security/test/bad/bad.txt) is not within the allowed path(s): (.) in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir_readlink.php on line 24
+bool(false)
+
+Warning: readlink(): open_basedir restriction in effect. File(/Users/Ingwie/Work/drag0n-php/tests/security/test/ok/symlink.txt) is not within the allowed path(s): (.) in /Users/Ingwie/Work/drag0n-php/tests/security/open_basedir_readlink.php on line 25
+bool(false)
+*** Finished testing open_basedir configuration [readlink] ***

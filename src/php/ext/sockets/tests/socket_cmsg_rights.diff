@@ -1,0 +1,33 @@
+014+   int(24)
+014-   int(32)
+016+ 
+017+ Warning: socket_recvmsg(): error converting native data (path: msghdr > control > element #1 > data): error creating resource for received file descriptor 97: fstat() call failed with errno 9 in /Users/Ingwie/Work/drag0n-php/ext/sockets/tests/socket_cmsg_rights.php on line 39
+016- Array
+017- (
+018-     [name] => 
+019-     [control] => Array
+020-         (
+021-             [0] => Array
+022-                 (
+023-                     [level] => %d
+024-                     [type] => %d
+025-                     [data] => Array
+026-                         (
+027-                             [0] => Resource id #%d
+028-                             [1] => Resource id #%d
+029-                             [2] => Resource id #%d
+030-                             [3] => Resource id #%d
+031-                         )
+032- 
+033-                 )
+034- 
+035-         )
+036- 
+037-     [iov] => Array
+038-         (
+039-             [0] => test thing
+040- 
+041-         )
+042- 
+043-     [flags] => 0
+044- )

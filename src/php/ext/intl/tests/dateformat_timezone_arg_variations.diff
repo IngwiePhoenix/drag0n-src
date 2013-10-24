@@ -1,0 +1,10 @@
+002+ domingo, 1 de enero de 2012 01:00:00 Hora estándar de Europa central
+003+ domingo, 1 de enero de 2012 00:00:00 Hora estándar de Europa occidental
+002- domingo%S 1 de enero de 2012 01:00:00 Hora estándar de Europa Central
+003- domingo%S 1 de enero de 2012 00:00:00 Hora%S de Europa Occidental
+005+ domingo, 1 de enero de 2012 01:00:00 Hora estándar de Europa central
+006+ domingo, 1 de enero de 2012 00:00:00 Hora estándar de Europa occidental
+007+ domingo, 1 de enero de 2012 01:00:00 Hora estándar de Europa central
+005- domingo%S 1 de enero de 2012 01:00:00 Hora estándar de Europa Central
+006- domingo%S 1 de enero de 2012 00:00:00 Hora%S de Europa Occidental
+007- domingo%S 1 de enero de 2012 01:00:00 Hora estándar de Europa Central

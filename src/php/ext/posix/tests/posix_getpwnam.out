@@ -1,0 +1,33 @@
+bool(false)
+array(7) {
+  ["name"]=>
+  string(0) ""
+  ["passwd"]=>
+  string(0) ""
+  ["uid"]=>
+  int(0)
+  ["gid"]=>
+  int(0)
+  ["gecos"]=>
+  string(0) ""
+  ["dir"]=>
+  string(0) ""
+  ["shell"]=>
+  string(0) ""
+}
+array(7) {
+  ["name"]=>
+  string(0) ""
+  ["passwd"]=>
+  string(0) ""
+  ["uid"]=>
+  int(0)
+  ["gid"]=>
+  int(0)
+  ["gecos"]=>
+  string(0) ""
+  ["dir"]=>
+  string(0) ""
+  ["shell"]=>
+  string(0) ""
+}

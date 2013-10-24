@@ -1,0 +1,22 @@
+# A system command
+rule exec
+  command = $in
+  description = SYSTEM: $in
+
+# Bring up some commands like mv, cp, rm, rmdir...
+rule cp
+  command = cp -v $in $out
+  description = Copying $in -> $out
+rule cpr
+  command = cp -rv $in
+  description = Rec-copying $in -> $out
+rule mv
+  command = mv -v $in $out
+  description = Moving $in -> $out
+rule rm
+  command = rm -v $out
+  description = Deleting $out
+rule rmdir
+  command = rm -Rvf $out
+  description = Deleting directory $out
+

@@ -1,0 +1,15 @@
+001+ zend_mm_heap corrupted
+001- bool(true)
+002- bool(true)
+003- <?xml version="1.0" encoding="iso-8859-1"?>
+004- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+005-     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+006- <html xmlns="http://www.w3.org/1999/xhtml">
+007- <head>
+008- <title></title>
+009- </head>
+010- <body>
+011- <p>Isto é um texto em Português<br />
+012- para testes.</p>
+013- </body>
+014- </html>

@@ -1,0 +1,6 @@
+001+ Notice: Use of undefined constant TEST - assumed 'TEST' in /Users/Ingwie/Work/drag0n-php/Zend/tests/bug63336.php on line 14
+002+ 
+003+ Strict Standards: Declaration of Child::foo() should be compatible with Base::foo($var = 'TEST', $more = NULL) in /Users/Ingwie/Work/drag0n-php/Zend/tests/bug63336.php on line 14
+001- Strict Standards: Declaration of Child::foo() should be compatible with Base::foo($var = '123', $more = NULL) in %sbug63336.php on line %d
+003- Strict Standards: Declaration of Child::bar() should be compatible with Base::bar($var, $more = 'XXX') in %sbug63336.php on line %d
+005+ Strict Standards: Declaration of Child::bar() should be compatible with Base::bar($more = 'XXX') in /Users/Ingwie/Work/drag0n-php/Zend/tests/bug63336.php on line 14

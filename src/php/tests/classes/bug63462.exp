@@ -1,0 +1,16 @@
+__get nonExisting
+Notice: Undefined index: nonExisting in %__set__get_006.php on line %d
+__get publicProperty
+Notice: Undefined index: publicProperty in %__set__get_006.php on line %d
+__get protectedProperty
+Notice: Undefined index: protectedProperty in %__set__get_006.php on line %d
+__get privateProperty
+Notice: Undefined index: privateProperty in %__set__get_006.php on line %d
+__isset nonExisting
+__isset publicProperty
+__isset protectedProperty
+__isset privateProperty
+__set nonExisting
+__set publicProperty
+__set protectedProperty
+__set privateProperty

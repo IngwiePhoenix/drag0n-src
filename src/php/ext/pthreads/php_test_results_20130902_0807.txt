@@ -1,0 +1,1389 @@
+
+=====================================================================
+FAILED TEST SUMMARY
+---------------------------------------------------------------------
+Test pthreads connections [tests/binding.phpt]
+Testing extended object functionality, magic methods bug #34 [tests/callstatic-etc.phpt]
+Test NULLing ressources in arrays [tests/complex-statics-set-null.phpt]
+Test complex statics bug #32 [tests/complex-statics.phpt]
+Test conditions [tests/conditions.phpt]
+Test constants (bug 19) [tests/constants.phpt]
+Testing sane handling of resources and objects bug #39 [tests/corrupted-resources.phpt]
+Testing foreign private member access, magic methods bug #32 [tests/foreign-private-members.phpt]
+Test function table inheritance [tests/functions.phpt]
+Test global constants [tests/global-constants.phpt]
+Test graceful fatalities [tests/graceful-fatalities.phpt]
+Test include/require functions as expected [tests/included-files.phpt]
+Test INI inheritance (bug 20) [tests/ini.phpt]
+Test interface functionality [tests/interface.phpt]
+Testing interfaces inheritance (#124) [tests/interfaces.phpt]
+Test reading object properties without debug info [tests/normal-reads.phpt]
+Test access to user defined methods in the object context [tests/oomethods.phpt]
+Test selective inheritance [tests/selective-inheritance.phpt]
+Test shift and pop [tests/shift-pop.phpt]
+Test stateful fatalities [tests/stateful-fatalities.phpt]
+Test access to static methods from within user threads [tests/staticmethods.phpt]
+Test statics (bug 19) [tests/statics.phpt]
+Test synchronized blocks [tests/synchronization.phpt]
+Test basic threading [tests/thread.phpt]
+Test unset defaults [moot: default values are ignored] [tests/unset-defaults.phpt]
+Test wait/notify [tests/wait.phpt]
+Test waiting timeouts [tests/waiting-timeouts.phpt]
+=====================================================================
+
+
+=====================================================================
+TEST RESULT SUMMARY
+---------------------------------------------------------------------
+Exts skipped    :    0
+Exts tested     :   37
+---------------------------------------------------------------------
+
+Number of tests :   38                38
+Tests skipped   :    0 (  0.0%) --------
+Tests warned    :    0 (  0.0%) (  0.0%)
+Tests failed    :   27 ( 71.1%) ( 71.1%)
+Expected fail   :    0 (  0.0%) (  0.0%)
+Tests passed    :   11 ( 28.9%) ( 28.9%)
+---------------------------------------------------------------------
+Time taken      :    8 seconds
+=====================================================================
+
+=====================================================================
+FAILED TEST SUMMARY
+---------------------------------------------------------------------
+Test pthreads connections [tests/binding.phpt]
+Testing extended object functionality, magic methods bug #34 [tests/callstatic-etc.phpt]
+Test NULLing ressources in arrays [tests/complex-statics-set-null.phpt]
+Test complex statics bug #32 [tests/complex-statics.phpt]
+Test conditions [tests/conditions.phpt]
+Test constants (bug 19) [tests/constants.phpt]
+Testing sane handling of resources and objects bug #39 [tests/corrupted-resources.phpt]
+Testing foreign private member access, magic methods bug #32 [tests/foreign-private-members.phpt]
+Test function table inheritance [tests/functions.phpt]
+Test global constants [tests/global-constants.phpt]
+Test graceful fatalities [tests/graceful-fatalities.phpt]
+Test include/require functions as expected [tests/included-files.phpt]
+Test INI inheritance (bug 20) [tests/ini.phpt]
+Test interface functionality [tests/interface.phpt]
+Testing interfaces inheritance (#124) [tests/interfaces.phpt]
+Test reading object properties without debug info [tests/normal-reads.phpt]
+Test access to user defined methods in the object context [tests/oomethods.phpt]
+Test selective inheritance [tests/selective-inheritance.phpt]
+Test shift and pop [tests/shift-pop.phpt]
+Test stateful fatalities [tests/stateful-fatalities.phpt]
+Test access to static methods from within user threads [tests/staticmethods.phpt]
+Test statics (bug 19) [tests/statics.phpt]
+Test synchronized blocks [tests/synchronization.phpt]
+Test basic threading [tests/thread.phpt]
+Test unset defaults [moot: default values are ignored] [tests/unset-defaults.phpt]
+Test wait/notify [tests/wait.phpt]
+Test waiting timeouts [tests/waiting-timeouts.phpt]
+=====================================================================
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/binding.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- bool(true)
+002- bool(true)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/callstatic-etc.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- string(11) "called_func"
+002- array(1) {
+003-   [0]=>
+004-   string(8) "argument"
+005- }
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/complex-statics-set-null.phpt
+================================================================================
+file::_get: something1
+array(1) {
+  [140735250432384]=>
+  resource(5) of type (stream)
+}
+file::_get: something2
+array(1) {
+  [140735250432384]=>
+  resource(5) of type (stream)
+}
+================================================================================
+011- file::_get: something3
+012- array(2) {
+013-   [%i]=>
+014-   NULL
+015-   [%i]=>
+016-   resource(2) of type (stream)
+017- }
+018- file::_get: something4
+019- array(2) {
+020-   [%i]=>
+021-   NULL
+022-   [%i]=>
+023-   resource(2) of type (stream)
+024- }
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/complex-statics.phpt
+================================================================================
+sql::_query: SELECT * FROM mysql.user
+sql::_query: SELECT * FROM mysql.user
+================================================================================
+003- sql::_query: SELECT * FROM mysql.user
+004- sql::_query: SELECT * FROM mysql.user
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/conditions.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- bool(true)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/constants.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- Y-m-d\TH:i:sO
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/corrupted-resources.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- Work Object
+002- (
+003- )
+004- object(Work)#3 (0) {
+005- }
+006- resource(2) of type (stream)
+007- resource(2) of type (stream)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/foreign-private-members.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- TEST: Hello World
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/functions.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- TestFunction
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/global-constants.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- string:string(8) "mystring"
+002- long:int(10)
+003- double:float(1.19)
+004- null:NULL
+005- boolean:bool(true)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/graceful-fatalities.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- bool(false)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/included-files.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- OK
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/ini.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- Test::run: :/var/lib/other
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/interface.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- InterfaceTest
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/interfaces.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- bool(true)
+002- bool(true)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/normal-reads.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- string(4) "Test"
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/oomethods.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- int(1)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/selective-inheritance.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- bool(true)
+002- bool(true)
+003- bool(true)
+004- bool(false)
+005- bool(false)
+006- bool(false)
+007- bool(true)
+008- bool(false)
+009- bool(true)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/shift-pop.phpt
+================================================================================
+object(S)#1 (1) {
+  ["0"]=>
+  string(4) "help"
+}
+================================================================================
+005- string(4) "help"
+006- object(S)#1 (0) {
+007- }
+008- object(S)#1 (1) {
+009-   ["1"]=>
+010-   string(4) "next"
+011- }
+012- string(4) "next"
+013- object(S)#1 (0) {
+014- }
+015- object(S)#1 (100) {
+016-   ["1"]=>
+017-   int(1)
+018-   ["2"]=>
+019-   int(2)
+020-   ["3"]=>
+021-   int(3)
+022-   ["4"]=>
+023-   int(4)
+024-   ["5"]=>
+025-   int(5)
+026-   ["6"]=>
+027-   int(6)
+028-   ["7"]=>
+029-   int(7)
+030-   ["8"]=>
+031-   int(8)
+032-   ["9"]=>
+033-   int(9)
+034-   ["10"]=>
+035-   int(10)
+036-   ["11"]=>
+037-   int(11)
+038-   ["12"]=>
+039-   int(12)
+040-   ["13"]=>
+041-   int(13)
+042-   ["14"]=>
+043-   int(14)
+044-   ["15"]=>
+045-   int(15)
+046-   ["16"]=>
+047-   int(16)
+048-   ["17"]=>
+049-   int(17)
+050-   ["18"]=>
+051-   int(18)
+052-   ["19"]=>
+053-   int(19)
+054-   ["20"]=>
+055-   int(20)
+056-   ["21"]=>
+057-   int(21)
+058-   ["22"]=>
+059-   int(22)
+060-   ["23"]=>
+061-   int(23)
+062-   ["24"]=>
+063-   int(24)
+064-   ["25"]=>
+065-   int(25)
+066-   ["26"]=>
+067-   int(26)
+068-   ["27"]=>
+069-   int(27)
+070-   ["28"]=>
+071-   int(28)
+072-   ["29"]=>
+073-   int(29)
+074-   ["30"]=>
+075-   int(30)
+076-   ["31"]=>
+077-   int(31)
+078-   ["32"]=>
+079-   int(32)
+080-   ["33"]=>
+081-   int(33)
+082-   ["34"]=>
+083-   int(34)
+084-   ["35"]=>
+085-   int(35)
+086-   ["36"]=>
+087-   int(36)
+088-   ["37"]=>
+089-   int(37)
+090-   ["38"]=>
+091-   int(38)
+092-   ["39"]=>
+093-   int(39)
+094-   ["40"]=>
+095-   int(40)
+096-   ["41"]=>
+097-   int(41)
+098-   ["42"]=>
+099-   int(42)
+100-   ["43"]=>
+101-   int(43)
+102-   ["44"]=>
+103-   int(44)
+104-   ["45"]=>
+105-   int(45)
+106-   ["46"]=>
+107-   int(46)
+108-   ["47"]=>
+109-   int(47)
+110-   ["48"]=>
+111-   int(48)
+112-   ["49"]=>
+113-   int(49)
+114-   ["50"]=>
+115-   int(50)
+116-   ["51"]=>
+117-   int(51)
+118-   ["52"]=>
+119-   int(52)
+120-   ["53"]=>
+121-   int(53)
+122-   ["54"]=>
+123-   int(54)
+124-   ["55"]=>
+125-   int(55)
+126-   ["56"]=>
+127-   int(56)
+128-   ["57"]=>
+129-   int(57)
+130-   ["58"]=>
+131-   int(58)
+132-   ["59"]=>
+133-   int(59)
+134-   ["60"]=>
+135-   int(60)
+136-   ["61"]=>
+137-   int(61)
+138-   ["62"]=>
+139-   int(62)
+140-   ["63"]=>
+141-   int(63)
+142-   ["64"]=>
+143-   int(64)
+144-   ["65"]=>
+145-   int(65)
+146-   ["66"]=>
+147-   int(66)
+148-   ["67"]=>
+149-   int(67)
+150-   ["68"]=>
+151-   int(68)
+152-   ["69"]=>
+153-   int(69)
+154-   ["70"]=>
+155-   int(70)
+156-   ["71"]=>
+157-   int(71)
+158-   ["72"]=>
+159-   int(72)
+160-   ["73"]=>
+161-   int(73)
+162-   ["74"]=>
+163-   int(74)
+164-   ["75"]=>
+165-   int(75)
+166-   ["76"]=>
+167-   int(76)
+168-   ["77"]=>
+169-   int(77)
+170-   ["78"]=>
+171-   int(78)
+172-   ["79"]=>
+173-   int(79)
+174-   ["80"]=>
+175-   int(80)
+176-   ["81"]=>
+177-   int(81)
+178-   ["82"]=>
+179-   int(82)
+180-   ["83"]=>
+181-   int(83)
+182-   ["84"]=>
+183-   int(84)
+184-   ["85"]=>
+185-   int(85)
+186-   ["86"]=>
+187-   int(86)
+188-   ["87"]=>
+189-   int(87)
+190-   ["88"]=>
+191-   int(88)
+192-   ["89"]=>
+193-   int(89)
+194-   ["90"]=>
+195-   int(90)
+196-   ["91"]=>
+197-   int(91)
+198-   ["92"]=>
+199-   int(92)
+200-   ["93"]=>
+201-   int(93)
+202-   ["94"]=>
+203-   int(94)
+204-   ["95"]=>
+205-   int(95)
+206-   ["96"]=>
+207-   int(96)
+208-   ["97"]=>
+209-   int(97)
+210-   ["98"]=>
+211-   int(98)
+212-   ["99"]=>
+213-   int(99)
+214-   ["100"]=>
+215-   int(100)
+216- }
+217- int(100)
+218- int(99)
+219- int(98)
+220- int(97)
+221- int(96)
+222- int(95)
+223- int(94)
+224- int(93)
+225- int(92)
+226- int(91)
+227- int(90)
+228- int(89)
+229- int(88)
+230- int(87)
+231- int(86)
+232- int(85)
+233- int(84)
+234- int(83)
+235- int(82)
+236- int(81)
+237- int(80)
+238- int(79)
+239- int(78)
+240- int(77)
+241- int(76)
+242- int(75)
+243- int(74)
+244- int(73)
+245- int(72)
+246- int(71)
+247- int(70)
+248- int(69)
+249- int(68)
+250- int(67)
+251- int(66)
+252- int(65)
+253- int(64)
+254- int(63)
+255- int(62)
+256- int(61)
+257- int(60)
+258- int(59)
+259- int(58)
+260- int(57)
+261- int(56)
+262- int(55)
+263- int(54)
+264- int(53)
+265- int(52)
+266- int(51)
+267- int(50)
+268- int(49)
+269- int(48)
+270- int(47)
+271- int(46)
+272- int(45)
+273- int(44)
+274- int(43)
+275- int(42)
+276- int(41)
+277- int(40)
+278- int(39)
+279- int(38)
+280- int(37)
+281- int(36)
+282- int(35)
+283- int(34)
+284- int(33)
+285- int(32)
+286- int(31)
+287- int(30)
+288- int(29)
+289- int(28)
+290- int(27)
+291- int(26)
+292- int(25)
+293- int(24)
+294- int(23)
+295- int(22)
+296- int(21)
+297- int(20)
+298- int(19)
+299- int(18)
+300- int(17)
+301- int(16)
+302- int(15)
+303- int(14)
+304- int(13)
+305- int(12)
+306- int(11)
+307- int(10)
+308- int(9)
+309- int(8)
+310- int(7)
+311- int(6)
+312- int(5)
+313- int(4)
+314- int(3)
+315- int(2)
+316- int(1)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/stateful-fatalities.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- bool(true)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/staticmethods.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- int(1)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/statics.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- string(15) "pthreads rocks!"
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/synchronization.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- bool(true)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/thread.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- bool(true)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/unset-defaults.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- NULL
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/wait.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- bool(true)
+================================================================================
+
+
+
+================================================================================
+/Users/Ingwie/Downloads/pthreads-master/tests/waiting-timeouts.phpt
+================================================================================
+
+================================================================================
+001+ 
+001- bool(false)
+================================================================================
+
+
+
+
+================================================================================
+BUILD ENVIRONMENT
+================================================================================
+OS:
+Darwin - Darwin Kevins-MacBook-Air.local 12.4.0 Darwin Kernel Version 12.4.0: Wed May  1 17:57:12 PDT 2013; root:xnu-2050.24.15~1/RELEASE_X86_64 x86_64
+
+Autoconf:
+autoconf (GNU Autoconf) 2.68
+Copyright (C) 2010 Free Software Foundation, Inc.
+License GPLv3+/Autoconf: GNU GPL version 3 or later
+<http://gnu.org/licenses/gpl.html>, <http://gnu.org/licenses/exceptions.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by David J. MacKenzie and Akim Demaille.
+
+Bundled Libtool:
+ltmain.sh (GNU libtool) 1.5.26 (1.1220.2.492 2008/01/30 06:40:56)
+
+Copyright (C) 2008  Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+System Libtool:
+
+Compiler:
+Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+Target: x86_64-apple-darwin12.4.0
+Thread model: posix
+
+Bison:
+bison (GNU Bison) 2.3
+Written by Robert Corbett and Richard Stallman.
+
+Copyright (C) 2006 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Libraries:
+
+
+
+================================================================================
+PHPINFO
+================================================================================
+phpinfo()
+PHP Version => 5.5.2
+
+System => Darwin Kevins-MacBook-Air.local 12.4.0 Darwin Kernel Version 12.4.0: Wed May  1 17:57:12 PDT 2013; root:xnu-2050.24.15~1/RELEASE_X86_64 x86_64
+Build Date => Sep  2 2013 09:44:28
+Configure Command =>  './configure'  '--prefix=/Applications/drag0n/drag0n.app/Contents/System' '--enable-static' '--with-config-file-path=' '--with-config-file-scan-dir=' '--with-curl' '--enable-ftp' '--with-gd' '--enable-intl' '--enable-mbstring' '--with-mcrypt' '--enable-embedded-mysqli' '--enable-opcache' '--enable-soap' '--with-tidy' '--enable-wddx' '--enable-zip' '--with-pear' '--with-tsrm-pth=pth-config' '--with-tsrm-pthreads' '--with-tsrm-st' '--enable-maintainer-zts'
+Server API => Command Line Interface
+Virtual Directory Support => enabled
+Configuration File (php.ini) Path =>  
+Loaded Configuration File => (none)
+Scan this dir for additional .ini files => (none)
+Additional .ini files parsed => (none)
+PHP API => 20121113
+PHP Extension => 20121212
+Zend Extension => 220121212
+Zend Extension Build => API220121212,TS
+PHP Extension Build => API20121212,TS
+Debug Build => no
+Thread Safety => enabled
+Zend Signal Handling => disabled
+Zend Memory Manager => enabled
+Zend Multibyte Support => provided by mbstring
+IPv6 Support => enabled
+DTrace Support => disabled
+
+Registered PHP Streams => php, file, glob, data, http, ftp, phar, zip
+Registered Stream Socket Transports => tcp, udp, unix, udg
+Registered Stream Filters => convert.iconv.*, mcrypt.*, mdecrypt.*, string.rot13, string.toupper, string.tolower, string.strip_tags, convert.*, consumed, dechunk
+
+This program makes use of the Zend Scripting Language Engine:
+Zend Engine v2.5.0, Copyright (c) 1998-2013 Zend Technologies
+
+
+ _______________________________________________________________________
+
+
+Configuration
+
+Core
+
+PHP Version => 5.5.2
+
+Directive => Local Value => Master Value
+allow_url_fopen => On => On
+allow_url_include => Off => Off
+always_populate_raw_post_data => Off => Off
+arg_separator.input => & => &
+arg_separator.output => & => &
+asp_tags => Off => Off
+auto_append_file => no value => no value
+auto_globals_jit => On => On
+auto_prepend_file => no value => no value
+browscap => no value => no value
+default_charset => no value => no value
+default_mimetype => text/html => text/html
+disable_classes => no value => no value
+disable_functions => no value => no value
+display_errors => STDERR => STDERR
+display_startup_errors => Off => Off
+doc_root => no value => no value
+docref_ext => no value => no value
+docref_root => no value => no value
+enable_dl => On => On
+enable_post_data_reading => On => On
+error_append_string => no value => no value
+error_log => no value => no value
+error_prepend_string => no value => no value
+error_reporting => no value => no value
+exit_on_timeout => Off => Off
+expose_php => On => On
+extension_dir => /Applications/drag0n/drag0n.app/Contents/System/lib/php/extensions/no-debug-zts-20121212 => /Applications/drag0n/drag0n.app/Contents/System/lib/php/extensions/no-debug-zts-20121212
+file_uploads => On => On
+highlight.comment => <font style="color: #FF8000">#FF8000</font> => <font style="color: #FF8000">#FF8000</font>
+highlight.default => <font style="color: #0000BB">#0000BB</font> => <font style="color: #0000BB">#0000BB</font>
+highlight.html => <font style="color: #000000">#000000</font> => <font style="color: #000000">#000000</font>
+highlight.keyword => <font style="color: #007700">#007700</font> => <font style="color: #007700">#007700</font>
+highlight.string => <font style="color: #DD0000">#DD0000</font> => <font style="color: #DD0000">#DD0000</font>
+html_errors => Off => Off
+ignore_repeated_errors => Off => Off
+ignore_repeated_source => Off => Off
+ignore_user_abort => Off => Off
+implicit_flush => On => On
+include_path => .:/Applications/drag0n/drag0n.app/Contents/System/lib/php => .:/Applications/drag0n/drag0n.app/Contents/System/lib/php
+log_errors => Off => Off
+log_errors_max_len => 1024 => 1024
+mail.add_x_header => Off => Off
+mail.force_extra_parameters => no value => no value
+mail.log => no value => no value
+max_execution_time => 0 => 0
+max_file_uploads => 20 => 20
+max_input_nesting_level => 64 => 64
+max_input_time => -1 => -1
+max_input_vars => 1000 => 1000
+memory_limit => 128M => 128M
+open_basedir => no value => no value
+output_buffering => 0 => 0
+output_handler => no value => no value
+post_max_size => 8M => 8M
+precision => 14 => 14
+realpath_cache_size => 16K => 16K
+realpath_cache_ttl => 120 => 120
+register_argc_argv => On => On
+report_memleaks => On => On
+report_zend_debug => Off => Off
+request_order => no value => no value
+sendmail_from => no value => no value
+sendmail_path => /usr/sbin/sendmail -t -i  => /usr/sbin/sendmail -t -i 
+serialize_precision => 17 => 17
+short_open_tag => On => On
+SMTP => localhost => localhost
+smtp_port => 25 => 25
+sql.safe_mode => Off => Off
+sys_temp_dir => no value => no value
+track_errors => Off => Off
+unserialize_callback_func => no value => no value
+upload_max_filesize => 2M => 2M
+upload_tmp_dir => no value => no value
+user_dir => no value => no value
+user_ini.cache_ttl => 300 => 300
+user_ini.filename => .user.ini => .user.ini
+variables_order => EGPCS => EGPCS
+xmlrpc_error_number => 0 => 0
+xmlrpc_errors => Off => Off
+zend.detect_unicode => On => On
+zend.enable_gc => On => On
+zend.multibyte => Off => Off
+zend.script_encoding => no value => no value
+
+ctype
+
+ctype functions => enabled
+
+curl
+
+cURL support => enabled
+cURL Information => 7.32.0
+Age => 3
+Features
+AsynchDNS => No
+CharConv => No
+Debug => No
+GSS-Negotiate => No
+IDN => No
+IPv6 => Yes
+krb4 => No
+Largefile => Yes
+libz => Yes
+NTLM => Yes
+NTLMWB => Yes
+SPNEGO => No
+SSL => Yes
+SSPI => No
+TLS-SRP => No
+Protocols => dict, file, ftp, ftps, gopher, http, https, imap, imaps, ldap, ldaps, pop3, pop3s, rtsp, smtp, smtps, telnet, tftp
+Host => x86_64-apple-darwin12.4.0
+SSL Version => OpenSSL/0.9.8x
+ZLib Version => 1.2.5
+
+date
+
+date/time support => enabled
+"Olson" Timezone Database Version => 2013.4
+Timezone Database => internal
+Default timezone => UTC
+
+Directive => Local Value => Master Value
+date.default_latitude => 31.7667 => 31.7667
+date.default_longitude => 35.2333 => 35.2333
+date.sunrise_zenith => 90.583333 => 90.583333
+date.sunset_zenith => 90.583333 => 90.583333
+date.timezone => no value => no value
+
+dom
+
+DOM/XML => enabled
+DOM/XML API Version => 20031129
+libxml Version => 2.7.8
+HTML Support => enabled
+XPath Support => enabled
+XPointer Support => enabled
+Schema Support => enabled
+RelaxNG Support => enabled
+
+ereg
+
+Regex Library => Bundled library enabled
+
+fileinfo
+
+fileinfo support => enabled
+version => 1.0.5-dev
+
+filter
+
+Input Validation and Filtering => enabled
+Revision => $Id: 12aebcf366f801ceeae618aefd4383fef24e701b $
+
+Directive => Local Value => Master Value
+filter.default => unsafe_raw => unsafe_raw
+filter.default_flags => no value => no value
+
+ftp
+
+FTP support => enabled
+
+gd
+
+GD Support => enabled
+GD Version => bundled (2.1.0 compatible)
+GIF Read Support => enabled
+GIF Create Support => enabled
+PNG Support => enabled
+libPNG Version => 1.6.3
+WBMP Support => enabled
+XBM Support => enabled
+
+Directive => Local Value => Master Value
+gd.jpeg_ignore_warning => 0 => 0
+
+hash
+
+hash support => enabled
+Hashing Engines => md2 md4 md5 sha1 sha224 sha256 sha384 sha512 ripemd128 ripemd160 ripemd256 ripemd320 whirlpool tiger128,3 tiger160,3 tiger192,3 tiger128,4 tiger160,4 tiger192,4 snefru snefru256 gost adler32 crc32 crc32b fnv132 fnv164 joaat haval128,3 haval160,3 haval192,3 haval224,3 haval256,3 haval128,4 haval160,4 haval192,4 haval224,4 haval256,4 haval128,5 haval160,5 haval192,5 haval224,5 haval256,5 
+
+iconv
+
+iconv support => enabled
+iconv implementation => libiconv
+iconv library version => 1.11
+
+Directive => Local Value => Master Value
+iconv.input_encoding => ISO-8859-1 => ISO-8859-1
+iconv.internal_encoding => ISO-8859-1 => ISO-8859-1
+iconv.output_encoding => ISO-8859-1 => ISO-8859-1
+
+intl
+
+Internationalization support => enabled
+version => 1.1.0
+ICU version => 51.2
+ICU Data version => 51.2
+
+Directive => Local Value => Master Value
+intl.default_locale => no value => no value
+intl.error_level => 0 => 0
+intl.use_exceptions => 0 => 0
+
+json
+
+json support => enabled
+json version => 1.2.1
+
+libxml
+
+libXML support => active
+libXML Compiled Version => 2.7.8
+libXML Loaded Version => 20708
+libXML streams => enabled
+
+mbstring
+
+Multibyte Support => enabled
+Multibyte string engine => libmbfl
+HTTP input encoding translation => disabled
+libmbfl version => 1.3.2
+
+mbstring extension makes use of "streamable kanji code filter and converter", which is distributed under the GNU Lesser General Public License version 2.1.
+
+Multibyte (japanese) regex support => enabled
+Multibyte regex (oniguruma) backtrack check => On
+Multibyte regex (oniguruma) version => 5.9.2
+
+Directive => Local Value => Master Value
+mbstring.detect_order => no value => no value
+mbstring.encoding_translation => Off => Off
+mbstring.func_overload => 0 => 0
+mbstring.http_input => pass => pass
+mbstring.http_output => pass => pass
+mbstring.http_output_conv_mimetypes => ^(text/|application/xhtml\+xml) => ^(text/|application/xhtml\+xml)
+mbstring.internal_encoding => no value => no value
+mbstring.language => neutral => neutral
+mbstring.strict_detection => Off => Off
+mbstring.substitute_character => no value => no value
+
+mcrypt
+
+mcrypt support => enabled
+mcrypt_filter support => enabled
+Version => 2.5.8
+Api No => 20021217
+Supported ciphers => cast-128 gost rijndael-128 twofish arcfour cast-256 loki97 rijndael-192 saferplus wake blowfish-compat des rijndael-256 serpent xtea blowfish enigma rc2 tripledes 
+Supported modes => cbc cfb ctr ecb ncfb nofb ofb stream 
+
+Directive => Local Value => Master Value
+mcrypt.algorithms_dir => no value => no value
+mcrypt.modes_dir => no value => no value
+
+pcre
+
+PCRE (Perl Compatible Regular Expressions) Support => enabled
+PCRE Library Version => 8.32 2012-11-30
+
+Directive => Local Value => Master Value
+pcre.backtrack_limit => 1000000 => 1000000
+pcre.recursion_limit => 100000 => 100000
+
+PDO
+
+PDO support => enabled
+PDO drivers => sqlite
+
+pdo_sqlite
+
+PDO Driver for SQLite 3.x => enabled
+SQLite Library => 3.7.7.1
+
+Phar
+
+Phar: PHP Archive support => enabled
+Phar EXT version => 2.0.1
+Phar API version => 1.1.1
+SVN revision => $Id: ec8e5fbde7521bb0b03975e5c086f4e10830b36f $
+Phar-based phar archives => enabled
+Tar-based phar archives => enabled
+ZIP-based phar archives => enabled
+gzip compression => disabled (install ext/zlib)
+bzip2 compression => disabled (install pecl/bz2)
+OpenSSL support => disabled (install ext/openssl)
+
+
+Phar based on pear/PHP_Archive, original concept by Davey Shafik.
+Phar fully realized by Gregory Beaver and Marcus Boerger.
+Portions of tar implementation Copyright (c) 2003-2009 Tim Kientzle.
+Directive => Local Value => Master Value
+phar.cache_list => no value => no value
+phar.readonly => On => On
+phar.require_hash => On => On
+
+posix
+
+Revision => $Id: 32db6705f5b617967a546be3114e178a4138c1ca $
+
+Reflection
+
+Reflection => enabled
+Version => $Id: b1f7484f243ca1baeb64560b43b1927e7279dc80 $
+
+session
+
+Session Support => enabled
+Registered save handlers => files user 
+Registered serializer handlers => php php_binary wddx 
+
+Directive => Local Value => Master Value
+session.auto_start => Off => Off
+session.cache_expire => 180 => 180
+session.cache_limiter => nocache => nocache
+session.cookie_domain => no value => no value
+session.cookie_httponly => Off => Off
+session.cookie_lifetime => 0 => 0
+session.cookie_path => / => /
+session.cookie_secure => Off => Off
+session.entropy_file => /dev/urandom => /dev/urandom
+session.entropy_length => 32 => 32
+session.gc_divisor => 100 => 100
+session.gc_maxlifetime => 1440 => 1440
+session.gc_probability => 1 => 1
+session.hash_bits_per_character => 4 => 4
+session.hash_function => 0 => 0
+session.name => PHPSESSID => PHPSESSID
+session.referer_check => no value => no value
+session.save_handler => files => files
+session.save_path => no value => no value
+session.serialize_handler => php => php
+session.upload_progress.cleanup => On => On
+session.upload_progress.enabled => On => On
+session.upload_progress.freq => 1% => 1%
+session.upload_progress.min_freq => 1 => 1
+session.upload_progress.name => PHP_SESSION_UPLOAD_PROGRESS => PHP_SESSION_UPLOAD_PROGRESS
+session.upload_progress.prefix => upload_progress_ => upload_progress_
+session.use_cookies => On => On
+session.use_only_cookies => On => On
+session.use_strict_mode => Off => Off
+session.use_trans_sid => 0 => 0
+
+SimpleXML
+
+Simplexml support => enabled
+Revision => $Id: eba46b909103648e33046d39de5d9de73bc28162 $
+Schema support => enabled
+
+soap
+
+Soap Client => enabled
+Soap Server => enabled
+
+Directive => Local Value => Master Value
+soap.wsdl_cache => 1 => 1
+soap.wsdl_cache_dir => /tmp => /tmp
+soap.wsdl_cache_enabled => 1 => 1
+soap.wsdl_cache_limit => 5 => 5
+soap.wsdl_cache_ttl => 86400 => 86400
+
+SPL
+
+SPL support => enabled
+Interfaces => Countable, OuterIterator, RecursiveIterator, SeekableIterator, SplObserver, SplSubject
+Classes => AppendIterator, ArrayIterator, ArrayObject, BadFunctionCallException, BadMethodCallException, CachingIterator, CallbackFilterIterator, DirectoryIterator, DomainException, EmptyIterator, FilesystemIterator, FilterIterator, GlobIterator, InfiniteIterator, InvalidArgumentException, IteratorIterator, LengthException, LimitIterator, LogicException, MultipleIterator, NoRewindIterator, OutOfBoundsException, OutOfRangeException, OverflowException, ParentIterator, RangeException, RecursiveArrayIterator, RecursiveCachingIterator, RecursiveCallbackFilterIterator, RecursiveDirectoryIterator, RecursiveFilterIterator, RecursiveIteratorIterator, RecursiveRegexIterator, RecursiveTreeIterator, RegexIterator, RuntimeException, SplDoublyLinkedList, SplFileInfo, SplFileObject, SplFixedArray, SplHeap, SplMinHeap, SplMaxHeap, SplObjectStorage, SplPriorityQueue, SplQueue, SplStack, SplTempFileObject, UnderflowException, UnexpectedValueException
+
+sqlite3
+
+SQLite3 support => enabled
+SQLite3 module version => 0.7-dev
+SQLite Library => 3.7.7.1
+
+Directive => Local Value => Master Value
+sqlite3.extension_dir => no value => no value
+
+standard
+
+Dynamic Library Support => enabled
+Path to sendmail => /usr/sbin/sendmail -t -i 
+
+Directive => Local Value => Master Value
+assert.active => 1 => 1
+assert.bail => 0 => 0
+assert.callback => no value => no value
+assert.quiet_eval => 0 => 0
+assert.warning => 1 => 1
+auto_detect_line_endings => 0 => 0
+default_socket_timeout => 60 => 60
+from => no value => no value
+url_rewriter.tags => a=href,area=href,frame=src,form=,fieldset= => a=href,area=href,frame=src,form=,fieldset=
+user_agent => no value => no value
+
+tidy
+
+Tidy support => enabled
+libTidy Release => 25 March 2009
+Extension Version => 2.0 ($Id$)
+
+Directive => Local Value => Master Value
+tidy.clean_output => 0 => 0
+tidy.default_config => no value => no value
+
+tokenizer
+
+Tokenizer Support => enabled
+
+wddx
+
+WDDX Support => enabled
+WDDX Session Serializer => enabled
+
+xml
+
+XML Support => active
+XML Namespace Support => active
+libxml2 Version => 2.7.8
+
+xmlreader
+
+XMLReader => enabled
+
+xmlwriter
+
+XMLWriter => enabled
+
+zip
+
+Zip => enabled
+Extension Version => $Id: 7297523aaab210cb891a4b7673bbc301cd087033 $
+Zip version => 1.11.0
+Libzip version => 0.10.1
+
+Additional Modules
+
+Module Name
+
+Environment
+
+Variable => Value
+TERM_PROGRAM => Apple_Terminal
+TEST_PHP_SRCDIR => /Users/Ingwie/Downloads/pthreads-master
+SHELL => /bin/bash
+TERM => xterm-256color
+MAKEFLAGS =>  
+SSH_CLIENT => deleted
+TMPDIR => /var/folders/r0/k8ytfc6j0fl13f3sh7jtkz440000gn/T/
+Apple_PubSub_Socket_Render => /tmp/launch-BuQDaC/Render
+TERM_PROGRAM_VERSION => 309
+OLDPWD => /Users/Ingwie/Downloads/pthreads-master
+TERM_SESSION_ID => A25819E1-EA9C-4A40-B9F7-39324AA4CF84
+SSH_TTY => deleted
+USER => Ingwie
+COMMAND_MODE => unix2003
+SSH_AUTH_SOCK => deleted
+Apple_Ubiquity_Message => /tmp/launch-r3mHQF/Apple_Ubiquity_Message
+__CF_USER_TEXT_ENCODING => 0x1F5:0:3
+MAKELEVEL => 1
+MFLAGS =>  
+PATH => /Applications/drag0n/drag0n.app/Contents/System/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/Ingwie/Work/bin
+PWD => /Users/Ingwie/Downloads/pthreads-master
+LANG => de_DE.UTF-8
+TEST_PHP_EXECUTABLE => /Applications/drag0n/drag0n.app/Contents/System/bin/php
+NODE_PATH => /Applications/drag0n/drag0n.app/Contents/System/lib/node
+HOME => /Users/Ingwie
+SHLVL => 3
+LOGNAME => Ingwie
+SSH_CONNECTION => deleted
+DISPLAY => /tmp/launch-101dn9/org.macosforge.xquartz:0
+CC => cc
+_ => /Applications/drag0n/drag0n.app/Contents/System/bin/php
+
+PHP Variables
+
+Variable => Value
+_SERVER["TERM_PROGRAM"] => Apple_Terminal
+_SERVER["TEST_PHP_SRCDIR"] => /Users/Ingwie/Downloads/pthreads-master
+_SERVER["SHELL"] => /bin/bash
+_SERVER["TERM"] => xterm-256color
+_SERVER["MAKEFLAGS"] => 
+_SERVER["SSH_CLIENT"] => deleted
+_SERVER["TMPDIR"] => /var/folders/r0/k8ytfc6j0fl13f3sh7jtkz440000gn/T/
+_SERVER["Apple_PubSub_Socket_Render"] => /tmp/launch-BuQDaC/Render
+_SERVER["TERM_PROGRAM_VERSION"] => 309
+_SERVER["OLDPWD"] => /Users/Ingwie/Downloads/pthreads-master
+_SERVER["TERM_SESSION_ID"] => A25819E1-EA9C-4A40-B9F7-39324AA4CF84
+_SERVER["SSH_TTY"] => deleted
+_SERVER["USER"] => Ingwie
+_SERVER["COMMAND_MODE"] => unix2003
+_SERVER["SSH_AUTH_SOCK"] => deleted
+_SERVER["Apple_Ubiquity_Message"] => /tmp/launch-r3mHQF/Apple_Ubiquity_Message
+_SERVER["__CF_USER_TEXT_ENCODING"] => 0x1F5:0:3
+_SERVER["MAKELEVEL"] => 1
+_SERVER["MFLAGS"] => 
+_SERVER["PATH"] => /Applications/drag0n/drag0n.app/Contents/System/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/Ingwie/Work/bin
+_SERVER["PWD"] => /Users/Ingwie/Downloads/pthreads-master
+_SERVER["LANG"] => de_DE.UTF-8
+_SERVER["TEST_PHP_EXECUTABLE"] => /Applications/drag0n/drag0n.app/Contents/System/bin/php
+_SERVER["NODE_PATH"] => /Applications/drag0n/drag0n.app/Contents/System/lib/node
+_SERVER["HOME"] => /Users/Ingwie
+_SERVER["SHLVL"] => 3
+_SERVER["LOGNAME"] => Ingwie
+_SERVER["SSH_CONNECTION"] => deleted
+_SERVER["DISPLAY"] => /tmp/launch-101dn9/org.macosforge.xquartz:0
+_SERVER["CC"] => cc
+_SERVER["_"] => /Applications/drag0n/drag0n.app/Contents/System/bin/php
+_SERVER["PHP_SELF"] => 
+_SERVER["SCRIPT_NAME"] => 
+_SERVER["SCRIPT_FILENAME"] => 
+_SERVER["PATH_TRANSLATED"] => 
+_SERVER["DOCUMENT_ROOT"] => 
+_SERVER["REQUEST_TIME_FLOAT"] => 1378109270.475
+_SERVER["REQUEST_TIME"] => 1378109270
+_SERVER["argv"] => Array
+(
+)
+
+_SERVER["argc"] => 0
+_ENV["TERM_PROGRAM"] => Apple_Terminal
+_ENV["TEST_PHP_SRCDIR"] => /Users/Ingwie/Downloads/pthreads-master
+_ENV["SHELL"] => /bin/bash
+_ENV["TERM"] => xterm-256color
+_ENV["MAKEFLAGS"] => 
+_ENV["SSH_CLIENT"] => deleted
+_ENV["TMPDIR"] => /var/folders/r0/k8ytfc6j0fl13f3sh7jtkz440000gn/T/
+_ENV["Apple_PubSub_Socket_Render"] => /tmp/launch-BuQDaC/Render
+_ENV["TERM_PROGRAM_VERSION"] => 309
+_ENV["OLDPWD"] => /Users/Ingwie/Downloads/pthreads-master
+_ENV["TERM_SESSION_ID"] => A25819E1-EA9C-4A40-B9F7-39324AA4CF84
+_ENV["SSH_TTY"] => deleted
+_ENV["USER"] => Ingwie
+_ENV["COMMAND_MODE"] => unix2003
+_ENV["SSH_AUTH_SOCK"] => deleted
+_ENV["Apple_Ubiquity_Message"] => /tmp/launch-r3mHQF/Apple_Ubiquity_Message
+_ENV["__CF_USER_TEXT_ENCODING"] => 0x1F5:0:3
+_ENV["MAKELEVEL"] => 1
+_ENV["MFLAGS"] => 
+_ENV["PATH"] => /Applications/drag0n/drag0n.app/Contents/System/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/Ingwie/Work/bin
+_ENV["PWD"] => /Users/Ingwie/Downloads/pthreads-master
+_ENV["LANG"] => de_DE.UTF-8
+_ENV["TEST_PHP_EXECUTABLE"] => /Applications/drag0n/drag0n.app/Contents/System/bin/php
+_ENV["NODE_PATH"] => /Applications/drag0n/drag0n.app/Contents/System/lib/node
+_ENV["HOME"] => /Users/Ingwie
+_ENV["SHLVL"] => 3
+_ENV["LOGNAME"] => Ingwie
+_ENV["SSH_CONNECTION"] => deleted
+_ENV["DISPLAY"] => /tmp/launch-101dn9/org.macosforge.xquartz:0
+_ENV["CC"] => cc
+_ENV["_"] => /Applications/drag0n/drag0n.app/Contents/System/bin/php
+
+PHP License
+This program is free software; you can redistribute it and/or modify
+it under the terms of the PHP License as published by the PHP Group
+and included in the distribution in the file:  LICENSE
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+If you did not receive a copy of the PHP license, or have any
+questions about PHP licensing, please contact license@php.net.

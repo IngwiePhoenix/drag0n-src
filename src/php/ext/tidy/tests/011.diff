@@ -1,0 +1,9 @@
+001+ zend_mm_heap corrupted
+001- array(2) {
+002-   ["bgcolor"]=>
+003-   string(7) "#FFFFFF"
+004-   ["alink"]=>
+005-   string(7) "#000000"
+006- }
+007- Attrib 'bgcolor': #FFFFFF
+008- Attrib 'alink': #000000
