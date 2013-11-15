@@ -1,0 +1,104 @@
+<?php
+
+# drag0n's autoninja file
+
+echo <<<EOF
+	drag0n source tree 0.1
+
+This is actually a build.ninja generator. But we also use it as a boot-strap tool. Feel free to take a look into the source!
+We'll be bootstrapping your build of drag0n. If you want to re-run this configurator, just run autoNinja -f scripts/drag0n.an
+You can obtain autoNinja from my GitHub repo.
+EOF;
+echo "\n\n";
+echo "drag0n relies on some external tools - such as Chromium. In the following questions, we will ask you if you want to download or build these.\n";
+echo "Answer with b for [b]uilding or d for [d]ownload.\n";
+/*
+$chromium = substr( strtolower(readline("How about: Chromium? [b/d] ")), 0,1);
+$autoconf = substr( strtolower(readline("How about: Autoconf? [b/d] ")), 0,1);
+$automake = substr( strtolower(readline("How about: Automake? [b/d] ")), 0,1);
+$upx = 		substr( strtolower(readline("How about: UPX? [b/d] ")), 0,1);
+$cmake = 	substr( strtolower(readline("How about: CMake? [b/d] ")), 0,1);
+$libtool = 	substr( strtolower(readline("How about: libtool? [b/d] ")), 0,1);
+$make = 	substr( strtolower(readline("How about: make? [b/d] ")), 0,1);
+$ninja = 	substr( strtolower(readline("How about: ninja? [b/d] ")), 0,1);
+$gpg = 		substr( strtolower(readline("How about: GPGme (including dendencys)? [b/d] ")), 0,1);
+$p7zip = 	substr( strtolower(readline("How about: p7zip? [b/d] ")), 0,1);
+$re2c = 	substr( strtolower(readline("How about: re2c? [b/d] ")), 0,1);
+$apple = 	substr( strtolower(readline("How about: Apple Open Source Tools? [b/d] ")), 0,1);
+$clang = 	substr( strtolower(readline("How about: (latest) Clang? [b/d] ")), 0,1);
+*/
+# Save the real root into a constant
+define("_ROOT", realpath(dirname(__FILE__)."/.."));
+define("_PREFIX_BUILD", _ROOT.'/build');
+define("_PREFIX", '/Applications/drag0n/drag0n.app/Contents/System/');
+
+// Prepairing some converted .an files
+chdir(_ROOT.'/src/php');
+if(!file_exists(_ROOT.'/src/php/Makefile'))
+	system(_ROOT.'/src/php/configure --prefix='._PREFIX.'/usr/local --bindir='._PREFIX.'/bin --without-iconv');
+if(!file_exists(_ROOT.'/src/php/php.ninja')) {
+	system(PHP_BINARY.' '._ROOT.'/src/php/convert.php');
+	rename(_ROOT.'/src/php/build.ninja', _ROOT.'/src/php/php.ninja');
+}
+chdir(_ROOT);
+
+# We first need to check for our stuff - like if clang is here.
+check("clang",4); # at least 4, we provide 4.2.1
+
+setVar('prefix_normal','/Applications/drag0n/drag0n.app/Contents/System/usr/local');
+setVar('prefix_build','/Applications/drag0n/drag0n.app/Contents/System/usr');
+setVar('prefix_root','/Applications/drag0n/drag0n.app/Contents/System/');
+setVar('appDir', '/Applications/drag0n');
+
+# Default rules
+rule(
+	'configure',
+	'cd $in && ./configure --prefix=$prefix_normal >/dev/null',
+	'Configuring: $out',
+	['generator'=>'true']
+);
+rule(
+	'make',
+	'cd $in && ../bin/make -s -e all',
+	'Making $out'
+);
+rule('cp','cp $in $out','Copying $out --> $in');
+rule('mv','mv $in $out','Moving $out --> $in');
+rule('cpr','cp -r $in $out','Copying $out --> $in');
+rule('mkdir','mkdir $out','Creating folder $out');
+rule('exec','$SHELL -c $in','SYSTEM: $out');
+rule('base_compile', 'clang -c $in -o $out', 'Clang: $out');
+rule('base_link', 'clang $in -o $out', 'Executable: $out');
+
+# Manual configurations that can be done independently frome achother.
+foreach(['libcurl','libxml','libgpg-error'] as $src) 
+	source('configure', 'src/'.$src, 'src/'.$src.'/Makefile');
+source('configure', 'src/gpgme | src/libgpg-error/Makefile', 'src/gpgme/Makefile');
+
+# Makeing things
+
+# We can include the new rules from here. They're gonna be a liiiittle different than before. 
+# They all want to have their own rules and paths, so we gonna execute them seperately.
+subninja('src/php/php.ninja');
+
+chdir(_ROOT."/tools/upx");
+system(PHP_BINARY.' '.__AN__.' -f upx.an');
+rename('build.ninja', 'upx.ninja');
+chdir(_ROOT);
+subninja('tools/upx/upx.ninja');
+
+$dobjs=[];
+foreach(glob(_ROOT.'/tools/dylibbundler/src/*.cpp') as $in) {
+	echo "-> Adding: $in\n";
+	$in = realpath($in);
+	$out = out($in);
+	$dobjs[]=$out;
+	source('base_compile', $in, $out);
+}
+source('base_link',implode(" ", $dobjs), _ROOT.'/bin/dylibbundler');
+
+source('base_link', _ROOT.'/src/ccdv/ccdv.c', _ROOT.'/bin/ccdv');
+
+echo "Done. You now may want to run:\n";
+echo "\t\$ ./bin/ninja";
+echo "Have fun and good luck.";

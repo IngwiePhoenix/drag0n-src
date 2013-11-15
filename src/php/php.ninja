@@ -1,0 +1,742 @@
+# Generated using autoNinja
+rule opcache_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/opcache/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden    -w -c $in -o $out
+  description = CC: $out
+rule Optimizer_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/opcache/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden    -w -c $in -o $out
+  description = CC: $out
+rule date_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc -Iext/date/lib -Iext/date/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule lib_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc -Iext/date/lib -Iext/date/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule ereg_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc -Dregexec=php_regexec -Dregerror=php_regerror -Dregfree=php_regfree -Dregcomp=php_regcomp -Iext/ereg/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule regex_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc -Dregexec=php_regexec -Dregerror=php_regerror -Dregfree=php_regfree -Dregcomp=php_regcomp -Iext/ereg/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule libxml_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/libxml/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/libxml/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule pcrelib_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc -DHAVE_CONFIG_H -I/Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib -Iext/pcre/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule pcre_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc -DHAVE_CONFIG_H -I/Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib -Iext/pcre/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule sqlite3_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -DSQLITE_ENABLE_FTS3=1 -DSQLITE_CORE=1 -DSQLITE_ENABLE_COLUMN_METADATA=1 -DSQLITE_THREADSAFE=0  -Iext/sqlite3/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule libsqlite_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -DSQLITE_ENABLE_FTS3=1 -DSQLITE_CORE=1 -DSQLITE_ENABLE_COLUMN_METADATA=1 -DSQLITE_THREADSAFE=0  -Iext/sqlite3/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule ctype_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/ctype/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ctype/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule dom_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/dom/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/dom/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule fileinfo_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc -I/Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic -Iext/fileinfo/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule libmagic_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc -I/Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic -Iext/fileinfo/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule filter_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/filter/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/filter/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule hash_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/hash/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/hash/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule json_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/json/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/json/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule pdo_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/pdo/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/pdo/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule pdo_sqlite_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc -DPDO_SQLITE_BUNDLED=1 -DSQLITE_ENABLE_FTS3=1 -DSQLITE_CORE=1 -DSQLITE_ENABLE_COLUMN_METADATA=1 -DSQLITE_THREADSAFE=0 -I/Users/Ingwie/Work/drag0n-src/src/php/ext -Iext/pdo_sqlite/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/pdo_sqlite/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule phar_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/phar/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/phar/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule posix_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/posix/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/posix/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule reflection_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/reflection/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/reflection/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule session_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/session/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/session/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule simplexml_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/simplexml/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/simplexml/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule spl_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/spl/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/spl/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule standard_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/standard/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/standard/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule tokenizer_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/tokenizer/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/tokenizer/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule xml_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/xml/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/xml/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule xmlreader_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/xmlreader/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/xmlreader/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule xmlwriter_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Iext/xmlwriter/ -I/Users/Ingwie/Work/drag0n-src/src/php/ext/xmlwriter/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule TSRM_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -ITSRM/ -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule main_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Imain/ -I/Users/Ingwie/Work/drag0n-src/src/php/main/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule streams_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Imain/streams/ -I/Users/Ingwie/Work/drag0n-src/src/php/main/streams/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule Zend_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -IZend/ -I/Users/Ingwie/Work/drag0n-src/src/php/Zend/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule cli_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Isapi/cli/ -I/Users/Ingwie/Work/drag0n-src/src/php/sapi/cli/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule cgi_cc
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=compile cc  -Isapi/cgi/ -I/Users/Ingwie/Work/drag0n-src/src/php/sapi/cgi/ -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -w -c $in -o $out
+  description = CC: $out
+rule link_opcache.la
+  command = /bin/sh /Users/Ingwie/Work/drag0n-src/src/php/libtool --silent --preserve-dup-deps --mode=link cc -DPHP_ATOM_INC -I/Users/Ingwie/Work/drag0n-src/src/php/include -I/Users/Ingwie/Work/drag0n-src/src/php/main -I/Users/Ingwie/Work/drag0n-src/src/php -I/Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib -I/Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite -I/Users/Ingwie/Work/drag0n-src/src/php/TSRM -I/Users/Ingwie/Work/drag0n-src/src/php/Zend  -no-cpp-precomp  -g -O2 -fvisibility=hidden   -export-dynamic -avoid-version -prefer-pic -module -rpath /Users/Ingwie/Work/drag0n-src/src/php/modules   $in -o $out >/dev/null 2>/dev/null
+  description = LINK: $out
+rule link_php
+  command = cc -g -O2 -fvisibility=hidden      -lresolv -lm -lxml2 -lxml2 -lxml2 -lxml2 -lxml2 -lxml2  $in -o $out >/dev/null 2>/dev/null
+  description = LINK: $out
+rule link_php-cgi
+  command = cc -g -O2 -fvisibility=hidden      -lresolv -lm -lxml2 -lxml2 -lxml2 -lxml2 -lxml2 -lxml2  $in -o $out >/dev/null 2>/dev/null
+  description = LINK: $out
+
+build ext/opcache/ZendAccelerator.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/ZendAccelerator.c
+build ext/opcache/zend_accelerator_blacklist.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/zend_accelerator_blacklist.c
+build ext/opcache/zend_accelerator_debug.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/zend_accelerator_debug.c
+build ext/opcache/zend_accelerator_hash.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/zend_accelerator_hash.c
+build ext/opcache/zend_accelerator_module.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/zend_accelerator_module.c
+build ext/opcache/zend_persist.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/zend_persist.c
+build ext/opcache/zend_persist_calc.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/zend_persist_calc.c
+build ext/opcache/zend_shared_alloc.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/zend_shared_alloc.c
+build ext/opcache/zend_accelerator_util_funcs.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/zend_accelerator_util_funcs.c
+build ext/opcache/shared_alloc_shm.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/shared_alloc_shm.c
+build ext/opcache/shared_alloc_mmap.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/shared_alloc_mmap.c
+build ext/opcache/shared_alloc_posix.lo: opcache_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/shared_alloc_posix.c
+build ext/opcache/Optimizer/zend_optimizer.lo: Optimizer_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/opcache/Optimizer/zend_optimizer.c
+build ext/date/php_date.lo: date_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/date/php_date.c
+build ext/date/lib/astro.lo: lib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib/astro.c
+build ext/date/lib/dow.lo: lib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib/dow.c
+build ext/date/lib/parse_date.lo: lib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib/parse_date.c
+build ext/date/lib/parse_tz.lo: lib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib/parse_tz.c
+build ext/date/lib/timelib.lo: lib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib/timelib.c
+build ext/date/lib/tm2unixtime.lo: lib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib/tm2unixtime.c
+build ext/date/lib/unixtime2tm.lo: lib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib/unixtime2tm.c
+build ext/date/lib/parse_iso_intervals.lo: lib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib/parse_iso_intervals.c
+build ext/date/lib/interval.lo: lib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/date/lib/interval.c
+build ext/ereg/ereg.lo: ereg_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/ereg.c
+build ext/ereg/regex/regcomp.lo: regex_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex/regcomp.c
+build ext/ereg/regex/regexec.lo: regex_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex/regexec.c
+build ext/ereg/regex/regerror.lo: regex_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex/regerror.c
+build ext/ereg/regex/regfree.lo: regex_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/ereg/regex/regfree.c
+build ext/libxml/libxml.lo: libxml_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/libxml/libxml.c
+build ext/pcre/pcrelib/pcre_chartables.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_chartables.c
+build ext/pcre/pcrelib/pcre_ucd.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_ucd.c
+build ext/pcre/pcrelib/pcre_compile.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_compile.c
+build ext/pcre/pcrelib/pcre_config.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_config.c
+build ext/pcre/pcrelib/pcre_exec.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_exec.c
+build ext/pcre/pcrelib/pcre_fullinfo.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_fullinfo.c
+build ext/pcre/pcrelib/pcre_get.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_get.c
+build ext/pcre/pcrelib/pcre_globals.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_globals.c
+build ext/pcre/pcrelib/pcre_maketables.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_maketables.c
+build ext/pcre/pcrelib/pcre_newline.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_newline.c
+build ext/pcre/pcrelib/pcre_ord2utf8.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_ord2utf8.c
+build ext/pcre/pcrelib/pcre_refcount.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_refcount.c
+build ext/pcre/pcrelib/pcre_study.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_study.c
+build ext/pcre/pcrelib/pcre_tables.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_tables.c
+build ext/pcre/pcrelib/pcre_valid_utf8.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_valid_utf8.c
+build ext/pcre/pcrelib/pcre_version.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_version.c
+build ext/pcre/pcrelib/pcre_xclass.lo: pcrelib_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/pcrelib/pcre_xclass.c
+build ext/pcre/php_pcre.lo: pcre_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pcre/php_pcre.c
+build ext/sqlite3/sqlite3.lo: sqlite3_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/sqlite3.c
+build ext/sqlite3/libsqlite/sqlite3.lo: libsqlite_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/sqlite3/libsqlite/sqlite3.c
+build ext/ctype/ctype.lo: ctype_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/ctype/ctype.c
+build ext/dom/php_dom.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/php_dom.c
+build ext/dom/attr.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/attr.c
+build ext/dom/document.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/document.c
+build ext/dom/domerrorhandler.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/domerrorhandler.c
+build ext/dom/domstringlist.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/domstringlist.c
+build ext/dom/domexception.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/domexception.c
+build ext/dom/namelist.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/namelist.c
+build ext/dom/processinginstruction.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/processinginstruction.c
+build ext/dom/cdatasection.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/cdatasection.c
+build ext/dom/documentfragment.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/documentfragment.c
+build ext/dom/domimplementation.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/domimplementation.c
+build ext/dom/element.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/element.c
+build ext/dom/node.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/node.c
+build ext/dom/string_extend.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/string_extend.c
+build ext/dom/characterdata.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/characterdata.c
+build ext/dom/documenttype.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/documenttype.c
+build ext/dom/domimplementationlist.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/domimplementationlist.c
+build ext/dom/entity.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/entity.c
+build ext/dom/nodelist.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/nodelist.c
+build ext/dom/text.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/text.c
+build ext/dom/comment.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/comment.c
+build ext/dom/domconfiguration.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/domconfiguration.c
+build ext/dom/domimplementationsource.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/domimplementationsource.c
+build ext/dom/entityreference.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/entityreference.c
+build ext/dom/notation.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/notation.c
+build ext/dom/xpath.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/xpath.c
+build ext/dom/dom_iterators.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/dom_iterators.c
+build ext/dom/typeinfo.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/typeinfo.c
+build ext/dom/domerror.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/domerror.c
+build ext/dom/domlocator.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/domlocator.c
+build ext/dom/namednodemap.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/namednodemap.c
+build ext/dom/userdatahandler.lo: dom_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/dom/userdatahandler.c
+build ext/fileinfo/fileinfo.lo: fileinfo_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/fileinfo.c
+build ext/fileinfo/libmagic/apprentice.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/apprentice.c
+build ext/fileinfo/libmagic/apptype.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/apptype.c
+build ext/fileinfo/libmagic/ascmagic.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/ascmagic.c
+build ext/fileinfo/libmagic/cdf.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/cdf.c
+build ext/fileinfo/libmagic/cdf_time.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/cdf_time.c
+build ext/fileinfo/libmagic/compress.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/compress.c
+build ext/fileinfo/libmagic/encoding.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/encoding.c
+build ext/fileinfo/libmagic/fsmagic.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/fsmagic.c
+build ext/fileinfo/libmagic/funcs.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/funcs.c
+build ext/fileinfo/libmagic/is_tar.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/is_tar.c
+build ext/fileinfo/libmagic/magic.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/magic.c
+build ext/fileinfo/libmagic/print.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/print.c
+build ext/fileinfo/libmagic/readcdf.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/readcdf.c
+build ext/fileinfo/libmagic/readelf.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/readelf.c
+build ext/fileinfo/libmagic/softmagic.lo: libmagic_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/fileinfo/libmagic/softmagic.c
+build ext/filter/filter.lo: filter_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/filter/filter.c
+build ext/filter/sanitizing_filters.lo: filter_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/filter/sanitizing_filters.c
+build ext/filter/logical_filters.lo: filter_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/filter/logical_filters.c
+build ext/filter/callback_filter.lo: filter_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/filter/callback_filter.c
+build ext/hash/hash.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash.c
+build ext/hash/hash_md.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_md.c
+build ext/hash/hash_sha.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_sha.c
+build ext/hash/hash_ripemd.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_ripemd.c
+build ext/hash/hash_haval.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_haval.c
+build ext/hash/hash_tiger.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_tiger.c
+build ext/hash/hash_gost.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_gost.c
+build ext/hash/hash_snefru.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_snefru.c
+build ext/hash/hash_whirlpool.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_whirlpool.c
+build ext/hash/hash_adler32.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_adler32.c
+build ext/hash/hash_crc32.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_crc32.c
+build ext/hash/hash_fnv.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_fnv.c
+build ext/hash/hash_joaat.lo: hash_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/hash/hash_joaat.c
+build ext/json/json.lo: json_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/json/json.c
+build ext/json/utf8_decode.lo: json_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/json/utf8_decode.c
+build ext/json/JSON_parser.lo: json_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/json/JSON_parser.c
+build ext/pdo/pdo.lo: pdo_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pdo/pdo.c
+build ext/pdo/pdo_dbh.lo: pdo_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pdo/pdo_dbh.c
+build ext/pdo/pdo_stmt.lo: pdo_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pdo/pdo_stmt.c
+build ext/pdo/pdo_sql_parser.lo: pdo_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pdo/pdo_sql_parser.c
+build ext/pdo/pdo_sqlstate.lo: pdo_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pdo/pdo_sqlstate.c
+build ext/pdo_sqlite/pdo_sqlite.lo: pdo_sqlite_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pdo_sqlite/pdo_sqlite.c
+build ext/pdo_sqlite/sqlite_driver.lo: pdo_sqlite_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pdo_sqlite/sqlite_driver.c
+build ext/pdo_sqlite/sqlite_statement.lo: pdo_sqlite_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/pdo_sqlite/sqlite_statement.c
+build ext/phar/util.lo: phar_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/phar/util.c
+build ext/phar/tar.lo: phar_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/phar/tar.c
+build ext/phar/zip.lo: phar_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/phar/zip.c
+build ext/phar/stream.lo: phar_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/phar/stream.c
+build ext/phar/func_interceptors.lo: phar_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/phar/func_interceptors.c
+build ext/phar/dirstream.lo: phar_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/phar/dirstream.c
+build ext/phar/phar.lo: phar_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/phar/phar.c
+build ext/phar/phar_object.lo: phar_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/phar/phar_object.c
+build ext/phar/phar_path_check.lo: phar_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/phar/phar_path_check.c
+build ext/posix/posix.lo: posix_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/posix/posix.c
+build ext/reflection/php_reflection.lo: reflection_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/reflection/php_reflection.c
+build ext/session/mod_user_class.lo: session_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/session/mod_user_class.c
+build ext/session/session.lo: session_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/session/session.c
+build ext/session/mod_files.lo: session_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/session/mod_files.c
+build ext/session/mod_mm.lo: session_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/session/mod_mm.c
+build ext/session/mod_user.lo: session_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/session/mod_user.c
+build ext/simplexml/simplexml.lo: simplexml_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/simplexml/simplexml.c
+build ext/simplexml/sxe.lo: simplexml_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/simplexml/sxe.c
+build ext/spl/php_spl.lo: spl_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/spl/php_spl.c
+build ext/spl/spl_functions.lo: spl_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/spl/spl_functions.c
+build ext/spl/spl_engine.lo: spl_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/spl/spl_engine.c
+build ext/spl/spl_iterators.lo: spl_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/spl/spl_iterators.c
+build ext/spl/spl_array.lo: spl_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/spl/spl_array.c
+build ext/spl/spl_directory.lo: spl_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/spl/spl_directory.c
+build ext/spl/spl_exceptions.lo: spl_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/spl/spl_exceptions.c
+build ext/spl/spl_observer.lo: spl_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/spl/spl_observer.c
+build ext/spl/spl_dllist.lo: spl_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/spl/spl_dllist.c
+build ext/spl/spl_heap.lo: spl_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/spl/spl_heap.c
+build ext/spl/spl_fixedarray.lo: spl_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/spl/spl_fixedarray.c
+build ext/standard/crypt_freesec.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/crypt_freesec.c
+build ext/standard/crypt_blowfish.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/crypt_blowfish.c
+build ext/standard/crypt_sha512.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/crypt_sha512.c
+build ext/standard/crypt_sha256.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/crypt_sha256.c
+build ext/standard/php_crypt_r.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/php_crypt_r.c
+build ext/standard/array.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/array.c
+build ext/standard/base64.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/base64.c
+build ext/standard/basic_functions.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/basic_functions.c
+build ext/standard/browscap.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/browscap.c
+build ext/standard/crc32.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/crc32.c
+build ext/standard/crypt.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/crypt.c
+build ext/standard/cyr_convert.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/cyr_convert.c
+build ext/standard/datetime.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/datetime.c
+build ext/standard/dir.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/dir.c
+build ext/standard/dl.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/dl.c
+build ext/standard/dns.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/dns.c
+build ext/standard/exec.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/exec.c
+build ext/standard/file.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/file.c
+build ext/standard/filestat.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/filestat.c
+build ext/standard/flock_compat.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/flock_compat.c
+build ext/standard/formatted_print.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/formatted_print.c
+build ext/standard/fsock.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/fsock.c
+build ext/standard/head.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/head.c
+build ext/standard/html.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/html.c
+build ext/standard/image.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/image.c
+build ext/standard/info.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/info.c
+build ext/standard/iptc.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/iptc.c
+build ext/standard/lcg.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/lcg.c
+build ext/standard/link.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/link.c
+build ext/standard/mail.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/mail.c
+build ext/standard/math.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/math.c
+build ext/standard/md5.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/md5.c
+build ext/standard/metaphone.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/metaphone.c
+build ext/standard/microtime.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/microtime.c
+build ext/standard/pack.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/pack.c
+build ext/standard/pageinfo.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/pageinfo.c
+build ext/standard/quot_print.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/quot_print.c
+build ext/standard/rand.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/rand.c
+build ext/standard/soundex.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/soundex.c
+build ext/standard/string.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/string.c
+build ext/standard/scanf.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/scanf.c
+build ext/standard/syslog.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/syslog.c
+build ext/standard/type.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/type.c
+build ext/standard/uniqid.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/uniqid.c
+build ext/standard/url.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/url.c
+build ext/standard/var.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/var.c
+build ext/standard/versioning.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/versioning.c
+build ext/standard/assert.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/assert.c
+build ext/standard/strnatcmp.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/strnatcmp.c
+build ext/standard/levenshtein.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/levenshtein.c
+build ext/standard/incomplete_class.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/incomplete_class.c
+build ext/standard/url_scanner_ex.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/url_scanner_ex.c
+build ext/standard/ftp_fopen_wrapper.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/ftp_fopen_wrapper.c
+build ext/standard/http_fopen_wrapper.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/http_fopen_wrapper.c
+build ext/standard/php_fopen_wrapper.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/php_fopen_wrapper.c
+build ext/standard/credits.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/credits.c
+build ext/standard/css.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/css.c
+build ext/standard/var_unserializer.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/var_unserializer.c
+build ext/standard/ftok.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/ftok.c
+build ext/standard/sha1.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/sha1.c
+build ext/standard/user_filters.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/user_filters.c
+build ext/standard/uuencode.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/uuencode.c
+build ext/standard/filters.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/filters.c
+build ext/standard/proc_open.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/proc_open.c
+build ext/standard/streamsfuncs.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/streamsfuncs.c
+build ext/standard/http.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/http.c
+build ext/standard/password.lo: standard_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/standard/password.c
+build ext/tokenizer/tokenizer.lo: tokenizer_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/tokenizer/tokenizer.c
+build ext/tokenizer/tokenizer_data.lo: tokenizer_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/tokenizer/tokenizer_data.c
+build ext/xml/xml.lo: xml_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/xml/xml.c
+build ext/xml/compat.lo: xml_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/xml/compat.c
+build ext/xmlreader/php_xmlreader.lo: xmlreader_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/xmlreader/php_xmlreader.c
+build ext/xmlwriter/php_xmlwriter.lo: xmlwriter_cc /Users/Ingwie/Work/drag0n-src/src/php/ext/xmlwriter/php_xmlwriter.c
+build TSRM/TSRM.lo: TSRM_cc /Users/Ingwie/Work/drag0n-src/src/php/TSRM/TSRM.c
+build TSRM/tsrm_strtok_r.lo: TSRM_cc /Users/Ingwie/Work/drag0n-src/src/php/TSRM/tsrm_strtok_r.c
+build TSRM/tsrm_virtual_cwd.lo: TSRM_cc /Users/Ingwie/Work/drag0n-src/src/php/TSRM/tsrm_virtual_cwd.c
+build main/main.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/main.c
+build main/snprintf.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/snprintf.c
+build main/spprintf.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/spprintf.c
+build main/php_sprintf.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/php_sprintf.c
+build main/fopen_wrappers.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/fopen_wrappers.c
+build main/alloca.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/alloca.c
+build main/php_scandir.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/php_scandir.c
+build main/php_ini.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/php_ini.c
+build main/SAPI.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/SAPI.c
+build main/rfc1867.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/rfc1867.c
+build main/php_content_types.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/php_content_types.c
+build main/strlcpy.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/strlcpy.c
+build main/strlcat.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/strlcat.c
+build main/mergesort.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/mergesort.c
+build main/reentrancy.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/reentrancy.c
+build main/php_variables.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/php_variables.c
+build main/php_ticks.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/php_ticks.c
+build main/network.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/network.c
+build main/php_open_temporary_file.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/php_open_temporary_file.c
+build main/output.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/output.c
+build main/getopt.lo: main_cc /Users/Ingwie/Work/drag0n-src/src/php/main/getopt.c
+build main/streams/streams.lo: streams_cc /Users/Ingwie/Work/drag0n-src/src/php/main/streams/streams.c
+build main/streams/cast.lo: streams_cc /Users/Ingwie/Work/drag0n-src/src/php/main/streams/cast.c
+build main/streams/memory.lo: streams_cc /Users/Ingwie/Work/drag0n-src/src/php/main/streams/memory.c
+build main/streams/filter.lo: streams_cc /Users/Ingwie/Work/drag0n-src/src/php/main/streams/filter.c
+build main/streams/plain_wrapper.lo: streams_cc /Users/Ingwie/Work/drag0n-src/src/php/main/streams/plain_wrapper.c
+build main/streams/userspace.lo: streams_cc /Users/Ingwie/Work/drag0n-src/src/php/main/streams/userspace.c
+build main/streams/transports.lo: streams_cc /Users/Ingwie/Work/drag0n-src/src/php/main/streams/transports.c
+build main/streams/xp_socket.lo: streams_cc /Users/Ingwie/Work/drag0n-src/src/php/main/streams/xp_socket.c
+build main/streams/mmap.lo: streams_cc /Users/Ingwie/Work/drag0n-src/src/php/main/streams/mmap.c
+build main/streams/glob_wrapper.lo: streams_cc /Users/Ingwie/Work/drag0n-src/src/php/main/streams/glob_wrapper.c
+build Zend/zend_language_parser.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_language_parser.c
+build Zend/zend_language_scanner.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_language_scanner.c
+build Zend/zend_ini_parser.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_ini_parser.c
+build Zend/zend_ini_scanner.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_ini_scanner.c
+build Zend/zend_alloc.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_alloc.c
+build Zend/zend_compile.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_compile.c
+build Zend/zend_constants.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_constants.c
+build Zend/zend_dynamic_array.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_dynamic_array.c
+build Zend/zend_dtrace.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_dtrace.c
+build Zend/zend_execute_API.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_execute_API.c
+build Zend/zend_highlight.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_highlight.c
+build Zend/zend_llist.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_llist.c
+build Zend/zend_opcode.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_opcode.c
+build Zend/zend_operators.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_operators.c
+build Zend/zend_ptr_stack.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_ptr_stack.c
+build Zend/zend_stack.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_stack.c
+build Zend/zend_variables.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_variables.c
+build Zend/zend.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend.c
+build Zend/zend_API.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_API.c
+build Zend/zend_extensions.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_extensions.c
+build Zend/zend_hash.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_hash.c
+build Zend/zend_list.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_list.c
+build Zend/zend_indent.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_indent.c
+build Zend/zend_builtin_functions.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_builtin_functions.c
+build Zend/zend_sprintf.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_sprintf.c
+build Zend/zend_ini.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_ini.c
+build Zend/zend_qsort.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_qsort.c
+build Zend/zend_multibyte.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_multibyte.c
+build Zend/zend_ts_hash.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_ts_hash.c
+build Zend/zend_stream.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_stream.c
+build Zend/zend_iterators.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_iterators.c
+build Zend/zend_interfaces.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_interfaces.c
+build Zend/zend_exceptions.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_exceptions.c
+build Zend/zend_strtod.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_strtod.c
+build Zend/zend_gc.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_gc.c
+build Zend/zend_closures.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_closures.c
+build Zend/zend_float.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_float.c
+build Zend/zend_string.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_string.c
+build Zend/zend_signal.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_signal.c
+build Zend/zend_generators.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_generators.c
+build Zend/zend_objects.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_objects.c
+build Zend/zend_object_handlers.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_object_handlers.c
+build Zend/zend_objects_API.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_objects_API.c
+build Zend/zend_default_classes.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_default_classes.c
+build Zend/zend_execute.lo: Zend_cc /Users/Ingwie/Work/drag0n-src/src/php/Zend/zend_execute.c
+build main/internal_functions_cli.lo: main_cc main/internal_functions_cli.c
+build sapi/cli/php_cli.lo: cli_cc /Users/Ingwie/Work/drag0n-src/src/php/sapi/cli/php_cli.c
+build sapi/cli/php_http_parser.lo: cli_cc /Users/Ingwie/Work/drag0n-src/src/php/sapi/cli/php_http_parser.c
+build sapi/cli/php_cli_server.lo: cli_cc /Users/Ingwie/Work/drag0n-src/src/php/sapi/cli/php_cli_server.c
+build sapi/cli/ps_title.lo: cli_cc /Users/Ingwie/Work/drag0n-src/src/php/sapi/cli/ps_title.c
+build sapi/cli/php_cli_process_title.lo: cli_cc /Users/Ingwie/Work/drag0n-src/src/php/sapi/cli/php_cli_process_title.c
+build sapi/cgi/cgi_main.lo: cgi_cc /Users/Ingwie/Work/drag0n-src/src/php/sapi/cgi/cgi_main.c
+build sapi/cgi/fastcgi.lo: cgi_cc /Users/Ingwie/Work/drag0n-src/src/php/sapi/cgi/fastcgi.c
+build ext/opcache/opcache.la: link_opcache.la ext/opcache/ZendAccelerator.lo ext/opcache/zend_accelerator_blacklist.lo ext/opcache/zend_accelerator_debug.lo ext/opcache/zend_accelerator_hash.lo ext/opcache/zend_accelerator_module.lo ext/opcache/zend_persist.lo ext/opcache/zend_persist_calc.lo ext/opcache/zend_shared_alloc.lo ext/opcache/zend_accelerator_util_funcs.lo ext/opcache/shared_alloc_shm.lo ext/opcache/shared_alloc_mmap.lo ext/opcache/shared_alloc_posix.lo ext/opcache/Optimizer/zend_optimizer.lo
+build sapi/cli/php: link_php ext/date/php_date.o ext/date/lib/astro.o ext/date/lib/dow.o ext/date/lib/parse_date.o ext/date/lib/parse_tz.o ext/date/lib/timelib.o ext/date/lib/tm2unixtime.o ext/date/lib/unixtime2tm.o ext/date/lib/parse_iso_intervals.o ext/date/lib/interval.o ext/ereg/ereg.o ext/ereg/regex/regcomp.o ext/ereg/regex/regexec.o ext/ereg/regex/regerror.o ext/ereg/regex/regfree.o ext/libxml/libxml.o ext/pcre/pcrelib/pcre_chartables.o ext/pcre/pcrelib/pcre_ucd.o ext/pcre/pcrelib/pcre_compile.o ext/pcre/pcrelib/pcre_config.o ext/pcre/pcrelib/pcre_exec.o ext/pcre/pcrelib/pcre_fullinfo.o ext/pcre/pcrelib/pcre_get.o ext/pcre/pcrelib/pcre_globals.o ext/pcre/pcrelib/pcre_maketables.o ext/pcre/pcrelib/pcre_newline.o ext/pcre/pcrelib/pcre_ord2utf8.o ext/pcre/pcrelib/pcre_refcount.o ext/pcre/pcrelib/pcre_study.o ext/pcre/pcrelib/pcre_tables.o ext/pcre/pcrelib/pcre_valid_utf8.o ext/pcre/pcrelib/pcre_version.o ext/pcre/pcrelib/pcre_xclass.o ext/pcre/php_pcre.o ext/sqlite3/sqlite3.o ext/sqlite3/libsqlite/sqlite3.o ext/ctype/ctype.o ext/dom/php_dom.o ext/dom/attr.o ext/dom/document.o ext/dom/domerrorhandler.o ext/dom/domstringlist.o ext/dom/domexception.o ext/dom/namelist.o ext/dom/processinginstruction.o ext/dom/cdatasection.o ext/dom/documentfragment.o ext/dom/domimplementation.o ext/dom/element.o ext/dom/node.o ext/dom/string_extend.o ext/dom/characterdata.o ext/dom/documenttype.o ext/dom/domimplementationlist.o ext/dom/entity.o ext/dom/nodelist.o ext/dom/text.o ext/dom/comment.o ext/dom/domconfiguration.o ext/dom/domimplementationsource.o ext/dom/entityreference.o ext/dom/notation.o ext/dom/xpath.o ext/dom/dom_iterators.o ext/dom/typeinfo.o ext/dom/domerror.o ext/dom/domlocator.o ext/dom/namednodemap.o ext/dom/userdatahandler.o ext/fileinfo/fileinfo.o ext/fileinfo/libmagic/apprentice.o ext/fileinfo/libmagic/apptype.o ext/fileinfo/libmagic/ascmagic.o ext/fileinfo/libmagic/cdf.o ext/fileinfo/libmagic/cdf_time.o ext/fileinfo/libmagic/compress.o ext/fileinfo/libmagic/encoding.o ext/fileinfo/libmagic/fsmagic.o ext/fileinfo/libmagic/funcs.o ext/fileinfo/libmagic/is_tar.o ext/fileinfo/libmagic/magic.o ext/fileinfo/libmagic/print.o ext/fileinfo/libmagic/readcdf.o ext/fileinfo/libmagic/readelf.o ext/fileinfo/libmagic/softmagic.o ext/filter/filter.o ext/filter/sanitizing_filters.o ext/filter/logical_filters.o ext/filter/callback_filter.o ext/hash/hash.o ext/hash/hash_md.o ext/hash/hash_sha.o ext/hash/hash_ripemd.o ext/hash/hash_haval.o ext/hash/hash_tiger.o ext/hash/hash_gost.o ext/hash/hash_snefru.o ext/hash/hash_whirlpool.o ext/hash/hash_adler32.o ext/hash/hash_crc32.o ext/hash/hash_fnv.o ext/hash/hash_joaat.o ext/json/json.o ext/json/utf8_decode.o ext/json/JSON_parser.o ext/pdo/pdo.o ext/pdo/pdo_dbh.o ext/pdo/pdo_stmt.o ext/pdo/pdo_sql_parser.o ext/pdo/pdo_sqlstate.o ext/pdo_sqlite/pdo_sqlite.o ext/pdo_sqlite/sqlite_driver.o ext/pdo_sqlite/sqlite_statement.o ext/phar/util.o ext/phar/tar.o ext/phar/zip.o ext/phar/stream.o ext/phar/func_interceptors.o ext/phar/dirstream.o ext/phar/phar.o ext/phar/phar_object.o ext/phar/phar_path_check.o ext/posix/posix.o ext/reflection/php_reflection.o ext/session/mod_user_class.o ext/session/session.o ext/session/mod_files.o ext/session/mod_mm.o ext/session/mod_user.o ext/simplexml/simplexml.o ext/simplexml/sxe.o ext/spl/php_spl.o ext/spl/spl_functions.o ext/spl/spl_engine.o ext/spl/spl_iterators.o ext/spl/spl_array.o ext/spl/spl_directory.o ext/spl/spl_exceptions.o ext/spl/spl_observer.o ext/spl/spl_dllist.o ext/spl/spl_heap.o ext/spl/spl_fixedarray.o ext/standard/crypt_freesec.o ext/standard/crypt_blowfish.o ext/standard/crypt_sha512.o ext/standard/crypt_sha256.o ext/standard/php_crypt_r.o ext/standard/array.o ext/standard/base64.o ext/standard/basic_functions.o ext/standard/browscap.o ext/standard/crc32.o ext/standard/crypt.o ext/standard/cyr_convert.o ext/standard/datetime.o ext/standard/dir.o ext/standard/dl.o ext/standard/dns.o ext/standard/exec.o ext/standard/file.o ext/standard/filestat.o ext/standard/flock_compat.o ext/standard/formatted_print.o ext/standard/fsock.o ext/standard/head.o ext/standard/html.o ext/standard/image.o ext/standard/info.o ext/standard/iptc.o ext/standard/lcg.o ext/standard/link.o ext/standard/mail.o ext/standard/math.o ext/standard/md5.o ext/standard/metaphone.o ext/standard/microtime.o ext/standard/pack.o ext/standard/pageinfo.o ext/standard/quot_print.o ext/standard/rand.o ext/standard/soundex.o ext/standard/string.o ext/standard/scanf.o ext/standard/syslog.o ext/standard/type.o ext/standard/uniqid.o ext/standard/url.o ext/standard/var.o ext/standard/versioning.o ext/standard/assert.o ext/standard/strnatcmp.o ext/standard/levenshtein.o ext/standard/incomplete_class.o ext/standard/url_scanner_ex.o ext/standard/ftp_fopen_wrapper.o ext/standard/http_fopen_wrapper.o ext/standard/php_fopen_wrapper.o ext/standard/credits.o ext/standard/css.o ext/standard/var_unserializer.o ext/standard/ftok.o ext/standard/sha1.o ext/standard/user_filters.o ext/standard/uuencode.o ext/standard/filters.o ext/standard/proc_open.o ext/standard/streamsfuncs.o ext/standard/http.o ext/standard/password.o ext/tokenizer/tokenizer.o ext/tokenizer/tokenizer_data.o ext/xml/xml.o ext/xml/compat.o ext/xmlreader/php_xmlreader.o ext/xmlwriter/php_xmlwriter.o TSRM/TSRM.o TSRM/tsrm_strtok_r.o TSRM/tsrm_virtual_cwd.o main/main.o main/snprintf.o main/spprintf.o main/php_sprintf.o main/fopen_wrappers.o main/alloca.o main/php_scandir.o main/php_ini.o main/SAPI.o main/rfc1867.o main/php_content_types.o main/strlcpy.o main/strlcat.o main/mergesort.o main/reentrancy.o main/php_variables.o main/php_ticks.o main/network.o main/php_open_temporary_file.o main/output.o main/getopt.o main/streams/streams.o main/streams/cast.o main/streams/memory.o main/streams/filter.o main/streams/plain_wrapper.o main/streams/userspace.o main/streams/transports.o main/streams/xp_socket.o main/streams/mmap.o main/streams/glob_wrapper.o Zend/zend_language_parser.o Zend/zend_language_scanner.o Zend/zend_ini_parser.o Zend/zend_ini_scanner.o Zend/zend_alloc.o Zend/zend_compile.o Zend/zend_constants.o Zend/zend_dynamic_array.o Zend/zend_dtrace.o Zend/zend_execute_API.o Zend/zend_highlight.o Zend/zend_llist.o Zend/zend_opcode.o Zend/zend_operators.o Zend/zend_ptr_stack.o Zend/zend_stack.o Zend/zend_variables.o Zend/zend.o Zend/zend_API.o Zend/zend_extensions.o Zend/zend_hash.o Zend/zend_list.o Zend/zend_indent.o Zend/zend_builtin_functions.o Zend/zend_sprintf.o Zend/zend_ini.o Zend/zend_qsort.o Zend/zend_multibyte.o Zend/zend_ts_hash.o Zend/zend_stream.o Zend/zend_iterators.o Zend/zend_interfaces.o Zend/zend_exceptions.o Zend/zend_strtod.o Zend/zend_gc.o Zend/zend_closures.o Zend/zend_float.o Zend/zend_string.o Zend/zend_signal.o Zend/zend_generators.o Zend/zend_objects.o Zend/zend_object_handlers.o Zend/zend_objects_API.o Zend/zend_default_classes.o Zend/zend_execute.o main/internal_functions_cli.o sapi/cli/php_cli.o sapi/cli/php_http_parser.o sapi/cli/php_cli_server.o sapi/cli/ps_title.o sapi/cli/php_cli_process_title.o
+build ext/date/php_date.o: phony ext/date/php_date.lo
+build ext/date/lib/astro.o: phony ext/date/lib/astro.lo
+build ext/date/lib/dow.o: phony ext/date/lib/dow.lo
+build ext/date/lib/parse_date.o: phony ext/date/lib/parse_date.lo
+build ext/date/lib/parse_tz.o: phony ext/date/lib/parse_tz.lo
+build ext/date/lib/timelib.o: phony ext/date/lib/timelib.lo
+build ext/date/lib/tm2unixtime.o: phony ext/date/lib/tm2unixtime.lo
+build ext/date/lib/unixtime2tm.o: phony ext/date/lib/unixtime2tm.lo
+build ext/date/lib/parse_iso_intervals.o: phony ext/date/lib/parse_iso_intervals.lo
+build ext/date/lib/interval.o: phony ext/date/lib/interval.lo
+build ext/ereg/ereg.o: phony ext/ereg/ereg.lo
+build ext/ereg/regex/regcomp.o: phony ext/ereg/regex/regcomp.lo
+build ext/ereg/regex/regexec.o: phony ext/ereg/regex/regexec.lo
+build ext/ereg/regex/regerror.o: phony ext/ereg/regex/regerror.lo
+build ext/ereg/regex/regfree.o: phony ext/ereg/regex/regfree.lo
+build ext/libxml/libxml.o: phony ext/libxml/libxml.lo
+build ext/pcre/pcrelib/pcre_chartables.o: phony ext/pcre/pcrelib/pcre_chartables.lo
+build ext/pcre/pcrelib/pcre_ucd.o: phony ext/pcre/pcrelib/pcre_ucd.lo
+build ext/pcre/pcrelib/pcre_compile.o: phony ext/pcre/pcrelib/pcre_compile.lo
+build ext/pcre/pcrelib/pcre_config.o: phony ext/pcre/pcrelib/pcre_config.lo
+build ext/pcre/pcrelib/pcre_exec.o: phony ext/pcre/pcrelib/pcre_exec.lo
+build ext/pcre/pcrelib/pcre_fullinfo.o: phony ext/pcre/pcrelib/pcre_fullinfo.lo
+build ext/pcre/pcrelib/pcre_get.o: phony ext/pcre/pcrelib/pcre_get.lo
+build ext/pcre/pcrelib/pcre_globals.o: phony ext/pcre/pcrelib/pcre_globals.lo
+build ext/pcre/pcrelib/pcre_maketables.o: phony ext/pcre/pcrelib/pcre_maketables.lo
+build ext/pcre/pcrelib/pcre_newline.o: phony ext/pcre/pcrelib/pcre_newline.lo
+build ext/pcre/pcrelib/pcre_ord2utf8.o: phony ext/pcre/pcrelib/pcre_ord2utf8.lo
+build ext/pcre/pcrelib/pcre_refcount.o: phony ext/pcre/pcrelib/pcre_refcount.lo
+build ext/pcre/pcrelib/pcre_study.o: phony ext/pcre/pcrelib/pcre_study.lo
+build ext/pcre/pcrelib/pcre_tables.o: phony ext/pcre/pcrelib/pcre_tables.lo
+build ext/pcre/pcrelib/pcre_valid_utf8.o: phony ext/pcre/pcrelib/pcre_valid_utf8.lo
+build ext/pcre/pcrelib/pcre_version.o: phony ext/pcre/pcrelib/pcre_version.lo
+build ext/pcre/pcrelib/pcre_xclass.o: phony ext/pcre/pcrelib/pcre_xclass.lo
+build ext/pcre/php_pcre.o: phony ext/pcre/php_pcre.lo
+build ext/sqlite3/sqlite3.o: phony ext/sqlite3/sqlite3.lo
+build ext/sqlite3/libsqlite/sqlite3.o: phony ext/sqlite3/libsqlite/sqlite3.lo
+build ext/ctype/ctype.o: phony ext/ctype/ctype.lo
+build ext/dom/php_dom.o: phony ext/dom/php_dom.lo
+build ext/dom/attr.o: phony ext/dom/attr.lo
+build ext/dom/document.o: phony ext/dom/document.lo
+build ext/dom/domerrorhandler.o: phony ext/dom/domerrorhandler.lo
+build ext/dom/domstringlist.o: phony ext/dom/domstringlist.lo
+build ext/dom/domexception.o: phony ext/dom/domexception.lo
+build ext/dom/namelist.o: phony ext/dom/namelist.lo
+build ext/dom/processinginstruction.o: phony ext/dom/processinginstruction.lo
+build ext/dom/cdatasection.o: phony ext/dom/cdatasection.lo
+build ext/dom/documentfragment.o: phony ext/dom/documentfragment.lo
+build ext/dom/domimplementation.o: phony ext/dom/domimplementation.lo
+build ext/dom/element.o: phony ext/dom/element.lo
+build ext/dom/node.o: phony ext/dom/node.lo
+build ext/dom/string_extend.o: phony ext/dom/string_extend.lo
+build ext/dom/characterdata.o: phony ext/dom/characterdata.lo
+build ext/dom/documenttype.o: phony ext/dom/documenttype.lo
+build ext/dom/domimplementationlist.o: phony ext/dom/domimplementationlist.lo
+build ext/dom/entity.o: phony ext/dom/entity.lo
+build ext/dom/nodelist.o: phony ext/dom/nodelist.lo
+build ext/dom/text.o: phony ext/dom/text.lo
+build ext/dom/comment.o: phony ext/dom/comment.lo
+build ext/dom/domconfiguration.o: phony ext/dom/domconfiguration.lo
+build ext/dom/domimplementationsource.o: phony ext/dom/domimplementationsource.lo
+build ext/dom/entityreference.o: phony ext/dom/entityreference.lo
+build ext/dom/notation.o: phony ext/dom/notation.lo
+build ext/dom/xpath.o: phony ext/dom/xpath.lo
+build ext/dom/dom_iterators.o: phony ext/dom/dom_iterators.lo
+build ext/dom/typeinfo.o: phony ext/dom/typeinfo.lo
+build ext/dom/domerror.o: phony ext/dom/domerror.lo
+build ext/dom/domlocator.o: phony ext/dom/domlocator.lo
+build ext/dom/namednodemap.o: phony ext/dom/namednodemap.lo
+build ext/dom/userdatahandler.o: phony ext/dom/userdatahandler.lo
+build ext/fileinfo/fileinfo.o: phony ext/fileinfo/fileinfo.lo
+build ext/fileinfo/libmagic/apprentice.o: phony ext/fileinfo/libmagic/apprentice.lo
+build ext/fileinfo/libmagic/apptype.o: phony ext/fileinfo/libmagic/apptype.lo
+build ext/fileinfo/libmagic/ascmagic.o: phony ext/fileinfo/libmagic/ascmagic.lo
+build ext/fileinfo/libmagic/cdf.o: phony ext/fileinfo/libmagic/cdf.lo
+build ext/fileinfo/libmagic/cdf_time.o: phony ext/fileinfo/libmagic/cdf_time.lo
+build ext/fileinfo/libmagic/compress.o: phony ext/fileinfo/libmagic/compress.lo
+build ext/fileinfo/libmagic/encoding.o: phony ext/fileinfo/libmagic/encoding.lo
+build ext/fileinfo/libmagic/fsmagic.o: phony ext/fileinfo/libmagic/fsmagic.lo
+build ext/fileinfo/libmagic/funcs.o: phony ext/fileinfo/libmagic/funcs.lo
+build ext/fileinfo/libmagic/is_tar.o: phony ext/fileinfo/libmagic/is_tar.lo
+build ext/fileinfo/libmagic/magic.o: phony ext/fileinfo/libmagic/magic.lo
+build ext/fileinfo/libmagic/print.o: phony ext/fileinfo/libmagic/print.lo
+build ext/fileinfo/libmagic/readcdf.o: phony ext/fileinfo/libmagic/readcdf.lo
+build ext/fileinfo/libmagic/readelf.o: phony ext/fileinfo/libmagic/readelf.lo
+build ext/fileinfo/libmagic/softmagic.o: phony ext/fileinfo/libmagic/softmagic.lo
+build ext/filter/filter.o: phony ext/filter/filter.lo
+build ext/filter/sanitizing_filters.o: phony ext/filter/sanitizing_filters.lo
+build ext/filter/logical_filters.o: phony ext/filter/logical_filters.lo
+build ext/filter/callback_filter.o: phony ext/filter/callback_filter.lo
+build ext/hash/hash.o: phony ext/hash/hash.lo
+build ext/hash/hash_md.o: phony ext/hash/hash_md.lo
+build ext/hash/hash_sha.o: phony ext/hash/hash_sha.lo
+build ext/hash/hash_ripemd.o: phony ext/hash/hash_ripemd.lo
+build ext/hash/hash_haval.o: phony ext/hash/hash_haval.lo
+build ext/hash/hash_tiger.o: phony ext/hash/hash_tiger.lo
+build ext/hash/hash_gost.o: phony ext/hash/hash_gost.lo
+build ext/hash/hash_snefru.o: phony ext/hash/hash_snefru.lo
+build ext/hash/hash_whirlpool.o: phony ext/hash/hash_whirlpool.lo
+build ext/hash/hash_adler32.o: phony ext/hash/hash_adler32.lo
+build ext/hash/hash_crc32.o: phony ext/hash/hash_crc32.lo
+build ext/hash/hash_fnv.o: phony ext/hash/hash_fnv.lo
+build ext/hash/hash_joaat.o: phony ext/hash/hash_joaat.lo
+build ext/json/json.o: phony ext/json/json.lo
+build ext/json/utf8_decode.o: phony ext/json/utf8_decode.lo
+build ext/json/JSON_parser.o: phony ext/json/JSON_parser.lo
+build ext/pdo/pdo.o: phony ext/pdo/pdo.lo
+build ext/pdo/pdo_dbh.o: phony ext/pdo/pdo_dbh.lo
+build ext/pdo/pdo_stmt.o: phony ext/pdo/pdo_stmt.lo
+build ext/pdo/pdo_sql_parser.o: phony ext/pdo/pdo_sql_parser.lo
+build ext/pdo/pdo_sqlstate.o: phony ext/pdo/pdo_sqlstate.lo
+build ext/pdo_sqlite/pdo_sqlite.o: phony ext/pdo_sqlite/pdo_sqlite.lo
+build ext/pdo_sqlite/sqlite_driver.o: phony ext/pdo_sqlite/sqlite_driver.lo
+build ext/pdo_sqlite/sqlite_statement.o: phony ext/pdo_sqlite/sqlite_statement.lo
+build ext/phar/util.o: phony ext/phar/util.lo
+build ext/phar/tar.o: phony ext/phar/tar.lo
+build ext/phar/zip.o: phony ext/phar/zip.lo
+build ext/phar/stream.o: phony ext/phar/stream.lo
+build ext/phar/func_interceptors.o: phony ext/phar/func_interceptors.lo
+build ext/phar/dirstream.o: phony ext/phar/dirstream.lo
+build ext/phar/phar.o: phony ext/phar/phar.lo
+build ext/phar/phar_object.o: phony ext/phar/phar_object.lo
+build ext/phar/phar_path_check.o: phony ext/phar/phar_path_check.lo
+build ext/posix/posix.o: phony ext/posix/posix.lo
+build ext/reflection/php_reflection.o: phony ext/reflection/php_reflection.lo
+build ext/session/mod_user_class.o: phony ext/session/mod_user_class.lo
+build ext/session/session.o: phony ext/session/session.lo
+build ext/session/mod_files.o: phony ext/session/mod_files.lo
+build ext/session/mod_mm.o: phony ext/session/mod_mm.lo
+build ext/session/mod_user.o: phony ext/session/mod_user.lo
+build ext/simplexml/simplexml.o: phony ext/simplexml/simplexml.lo
+build ext/simplexml/sxe.o: phony ext/simplexml/sxe.lo
+build ext/spl/php_spl.o: phony ext/spl/php_spl.lo
+build ext/spl/spl_functions.o: phony ext/spl/spl_functions.lo
+build ext/spl/spl_engine.o: phony ext/spl/spl_engine.lo
+build ext/spl/spl_iterators.o: phony ext/spl/spl_iterators.lo
+build ext/spl/spl_array.o: phony ext/spl/spl_array.lo
+build ext/spl/spl_directory.o: phony ext/spl/spl_directory.lo
+build ext/spl/spl_exceptions.o: phony ext/spl/spl_exceptions.lo
+build ext/spl/spl_observer.o: phony ext/spl/spl_observer.lo
+build ext/spl/spl_dllist.o: phony ext/spl/spl_dllist.lo
+build ext/spl/spl_heap.o: phony ext/spl/spl_heap.lo
+build ext/spl/spl_fixedarray.o: phony ext/spl/spl_fixedarray.lo
+build ext/standard/crypt_freesec.o: phony ext/standard/crypt_freesec.lo
+build ext/standard/crypt_blowfish.o: phony ext/standard/crypt_blowfish.lo
+build ext/standard/crypt_sha512.o: phony ext/standard/crypt_sha512.lo
+build ext/standard/crypt_sha256.o: phony ext/standard/crypt_sha256.lo
+build ext/standard/php_crypt_r.o: phony ext/standard/php_crypt_r.lo
+build ext/standard/array.o: phony ext/standard/array.lo
+build ext/standard/base64.o: phony ext/standard/base64.lo
+build ext/standard/basic_functions.o: phony ext/standard/basic_functions.lo
+build ext/standard/browscap.o: phony ext/standard/browscap.lo
+build ext/standard/crc32.o: phony ext/standard/crc32.lo
+build ext/standard/crypt.o: phony ext/standard/crypt.lo
+build ext/standard/cyr_convert.o: phony ext/standard/cyr_convert.lo
+build ext/standard/datetime.o: phony ext/standard/datetime.lo
+build ext/standard/dir.o: phony ext/standard/dir.lo
+build ext/standard/dl.o: phony ext/standard/dl.lo
+build ext/standard/dns.o: phony ext/standard/dns.lo
+build ext/standard/exec.o: phony ext/standard/exec.lo
+build ext/standard/file.o: phony ext/standard/file.lo
+build ext/standard/filestat.o: phony ext/standard/filestat.lo
+build ext/standard/flock_compat.o: phony ext/standard/flock_compat.lo
+build ext/standard/formatted_print.o: phony ext/standard/formatted_print.lo
+build ext/standard/fsock.o: phony ext/standard/fsock.lo
+build ext/standard/head.o: phony ext/standard/head.lo
+build ext/standard/html.o: phony ext/standard/html.lo
+build ext/standard/image.o: phony ext/standard/image.lo
+build ext/standard/info.o: phony ext/standard/info.lo
+build ext/standard/iptc.o: phony ext/standard/iptc.lo
+build ext/standard/lcg.o: phony ext/standard/lcg.lo
+build ext/standard/link.o: phony ext/standard/link.lo
+build ext/standard/mail.o: phony ext/standard/mail.lo
+build ext/standard/math.o: phony ext/standard/math.lo
+build ext/standard/md5.o: phony ext/standard/md5.lo
+build ext/standard/metaphone.o: phony ext/standard/metaphone.lo
+build ext/standard/microtime.o: phony ext/standard/microtime.lo
+build ext/standard/pack.o: phony ext/standard/pack.lo
+build ext/standard/pageinfo.o: phony ext/standard/pageinfo.lo
+build ext/standard/quot_print.o: phony ext/standard/quot_print.lo
+build ext/standard/rand.o: phony ext/standard/rand.lo
+build ext/standard/soundex.o: phony ext/standard/soundex.lo
+build ext/standard/string.o: phony ext/standard/string.lo
+build ext/standard/scanf.o: phony ext/standard/scanf.lo
+build ext/standard/syslog.o: phony ext/standard/syslog.lo
+build ext/standard/type.o: phony ext/standard/type.lo
+build ext/standard/uniqid.o: phony ext/standard/uniqid.lo
+build ext/standard/url.o: phony ext/standard/url.lo
+build ext/standard/var.o: phony ext/standard/var.lo
+build ext/standard/versioning.o: phony ext/standard/versioning.lo
+build ext/standard/assert.o: phony ext/standard/assert.lo
+build ext/standard/strnatcmp.o: phony ext/standard/strnatcmp.lo
+build ext/standard/levenshtein.o: phony ext/standard/levenshtein.lo
+build ext/standard/incomplete_class.o: phony ext/standard/incomplete_class.lo
+build ext/standard/url_scanner_ex.o: phony ext/standard/url_scanner_ex.lo
+build ext/standard/ftp_fopen_wrapper.o: phony ext/standard/ftp_fopen_wrapper.lo
+build ext/standard/http_fopen_wrapper.o: phony ext/standard/http_fopen_wrapper.lo
+build ext/standard/php_fopen_wrapper.o: phony ext/standard/php_fopen_wrapper.lo
+build ext/standard/credits.o: phony ext/standard/credits.lo
+build ext/standard/css.o: phony ext/standard/css.lo
+build ext/standard/var_unserializer.o: phony ext/standard/var_unserializer.lo
+build ext/standard/ftok.o: phony ext/standard/ftok.lo
+build ext/standard/sha1.o: phony ext/standard/sha1.lo
+build ext/standard/user_filters.o: phony ext/standard/user_filters.lo
+build ext/standard/uuencode.o: phony ext/standard/uuencode.lo
+build ext/standard/filters.o: phony ext/standard/filters.lo
+build ext/standard/proc_open.o: phony ext/standard/proc_open.lo
+build ext/standard/streamsfuncs.o: phony ext/standard/streamsfuncs.lo
+build ext/standard/http.o: phony ext/standard/http.lo
+build ext/standard/password.o: phony ext/standard/password.lo
+build ext/tokenizer/tokenizer.o: phony ext/tokenizer/tokenizer.lo
+build ext/tokenizer/tokenizer_data.o: phony ext/tokenizer/tokenizer_data.lo
+build ext/xml/xml.o: phony ext/xml/xml.lo
+build ext/xml/compat.o: phony ext/xml/compat.lo
+build ext/xmlreader/php_xmlreader.o: phony ext/xmlreader/php_xmlreader.lo
+build ext/xmlwriter/php_xmlwriter.o: phony ext/xmlwriter/php_xmlwriter.lo
+build TSRM/TSRM.o: phony TSRM/TSRM.lo
+build TSRM/tsrm_strtok_r.o: phony TSRM/tsrm_strtok_r.lo
+build TSRM/tsrm_virtual_cwd.o: phony TSRM/tsrm_virtual_cwd.lo
+build main/main.o: phony main/main.lo
+build main/snprintf.o: phony main/snprintf.lo
+build main/spprintf.o: phony main/spprintf.lo
+build main/php_sprintf.o: phony main/php_sprintf.lo
+build main/fopen_wrappers.o: phony main/fopen_wrappers.lo
+build main/alloca.o: phony main/alloca.lo
+build main/php_scandir.o: phony main/php_scandir.lo
+build main/php_ini.o: phony main/php_ini.lo
+build main/SAPI.o: phony main/SAPI.lo
+build main/rfc1867.o: phony main/rfc1867.lo
+build main/php_content_types.o: phony main/php_content_types.lo
+build main/strlcpy.o: phony main/strlcpy.lo
+build main/strlcat.o: phony main/strlcat.lo
+build main/mergesort.o: phony main/mergesort.lo
+build main/reentrancy.o: phony main/reentrancy.lo
+build main/php_variables.o: phony main/php_variables.lo
+build main/php_ticks.o: phony main/php_ticks.lo
+build main/network.o: phony main/network.lo
+build main/php_open_temporary_file.o: phony main/php_open_temporary_file.lo
+build main/output.o: phony main/output.lo
+build main/getopt.o: phony main/getopt.lo
+build main/streams/streams.o: phony main/streams/streams.lo
+build main/streams/cast.o: phony main/streams/cast.lo
+build main/streams/memory.o: phony main/streams/memory.lo
+build main/streams/filter.o: phony main/streams/filter.lo
+build main/streams/plain_wrapper.o: phony main/streams/plain_wrapper.lo
+build main/streams/userspace.o: phony main/streams/userspace.lo
+build main/streams/transports.o: phony main/streams/transports.lo
+build main/streams/xp_socket.o: phony main/streams/xp_socket.lo
+build main/streams/mmap.o: phony main/streams/mmap.lo
+build main/streams/glob_wrapper.o: phony main/streams/glob_wrapper.lo
+build Zend/zend_language_parser.o: phony Zend/zend_language_parser.lo
+build Zend/zend_language_scanner.o: phony Zend/zend_language_scanner.lo
+build Zend/zend_ini_parser.o: phony Zend/zend_ini_parser.lo
+build Zend/zend_ini_scanner.o: phony Zend/zend_ini_scanner.lo
+build Zend/zend_alloc.o: phony Zend/zend_alloc.lo
+build Zend/zend_compile.o: phony Zend/zend_compile.lo
+build Zend/zend_constants.o: phony Zend/zend_constants.lo
+build Zend/zend_dynamic_array.o: phony Zend/zend_dynamic_array.lo
+build Zend/zend_dtrace.o: phony Zend/zend_dtrace.lo
+build Zend/zend_execute_API.o: phony Zend/zend_execute_API.lo
+build Zend/zend_highlight.o: phony Zend/zend_highlight.lo
+build Zend/zend_llist.o: phony Zend/zend_llist.lo
+build Zend/zend_opcode.o: phony Zend/zend_opcode.lo
+build Zend/zend_operators.o: phony Zend/zend_operators.lo
+build Zend/zend_ptr_stack.o: phony Zend/zend_ptr_stack.lo
+build Zend/zend_stack.o: phony Zend/zend_stack.lo
+build Zend/zend_variables.o: phony Zend/zend_variables.lo
+build Zend/zend.o: phony Zend/zend.lo
+build Zend/zend_API.o: phony Zend/zend_API.lo
+build Zend/zend_extensions.o: phony Zend/zend_extensions.lo
+build Zend/zend_hash.o: phony Zend/zend_hash.lo
+build Zend/zend_list.o: phony Zend/zend_list.lo
+build Zend/zend_indent.o: phony Zend/zend_indent.lo
+build Zend/zend_builtin_functions.o: phony Zend/zend_builtin_functions.lo
+build Zend/zend_sprintf.o: phony Zend/zend_sprintf.lo
+build Zend/zend_ini.o: phony Zend/zend_ini.lo
+build Zend/zend_qsort.o: phony Zend/zend_qsort.lo
+build Zend/zend_multibyte.o: phony Zend/zend_multibyte.lo
+build Zend/zend_ts_hash.o: phony Zend/zend_ts_hash.lo
+build Zend/zend_stream.o: phony Zend/zend_stream.lo
+build Zend/zend_iterators.o: phony Zend/zend_iterators.lo
+build Zend/zend_interfaces.o: phony Zend/zend_interfaces.lo
+build Zend/zend_exceptions.o: phony Zend/zend_exceptions.lo
+build Zend/zend_strtod.o: phony Zend/zend_strtod.lo
+build Zend/zend_gc.o: phony Zend/zend_gc.lo
+build Zend/zend_closures.o: phony Zend/zend_closures.lo
+build Zend/zend_float.o: phony Zend/zend_float.lo
+build Zend/zend_string.o: phony Zend/zend_string.lo
+build Zend/zend_signal.o: phony Zend/zend_signal.lo
+build Zend/zend_generators.o: phony Zend/zend_generators.lo
+build Zend/zend_objects.o: phony Zend/zend_objects.lo
+build Zend/zend_object_handlers.o: phony Zend/zend_object_handlers.lo
+build Zend/zend_objects_API.o: phony Zend/zend_objects_API.lo
+build Zend/zend_default_classes.o: phony Zend/zend_default_classes.lo
+build Zend/zend_execute.o: phony Zend/zend_execute.lo
+build main/internal_functions_cli.o: phony main/internal_functions_cli.lo
+build sapi/cli/php_cli.o: phony sapi/cli/php_cli.lo
+build sapi/cli/php_http_parser.o: phony sapi/cli/php_http_parser.lo
+build sapi/cli/php_cli_server.o: phony sapi/cli/php_cli_server.lo
+build sapi/cli/ps_title.o: phony sapi/cli/ps_title.lo
+build sapi/cli/php_cli_process_title.o: phony sapi/cli/php_cli_process_title.lo
+build sapi/cgi/php-cgi: link_php-cgi ext/date/php_date.o ext/date/lib/astro.o ext/date/lib/dow.o ext/date/lib/parse_date.o ext/date/lib/parse_tz.o ext/date/lib/timelib.o ext/date/lib/tm2unixtime.o ext/date/lib/unixtime2tm.o ext/date/lib/parse_iso_intervals.o ext/date/lib/interval.o ext/ereg/ereg.o ext/ereg/regex/regcomp.o ext/ereg/regex/regexec.o ext/ereg/regex/regerror.o ext/ereg/regex/regfree.o ext/libxml/libxml.o ext/pcre/pcrelib/pcre_chartables.o ext/pcre/pcrelib/pcre_ucd.o ext/pcre/pcrelib/pcre_compile.o ext/pcre/pcrelib/pcre_config.o ext/pcre/pcrelib/pcre_exec.o ext/pcre/pcrelib/pcre_fullinfo.o ext/pcre/pcrelib/pcre_get.o ext/pcre/pcrelib/pcre_globals.o ext/pcre/pcrelib/pcre_maketables.o ext/pcre/pcrelib/pcre_newline.o ext/pcre/pcrelib/pcre_ord2utf8.o ext/pcre/pcrelib/pcre_refcount.o ext/pcre/pcrelib/pcre_study.o ext/pcre/pcrelib/pcre_tables.o ext/pcre/pcrelib/pcre_valid_utf8.o ext/pcre/pcrelib/pcre_version.o ext/pcre/pcrelib/pcre_xclass.o ext/pcre/php_pcre.o ext/sqlite3/sqlite3.o ext/sqlite3/libsqlite/sqlite3.o ext/ctype/ctype.o ext/dom/php_dom.o ext/dom/attr.o ext/dom/document.o ext/dom/domerrorhandler.o ext/dom/domstringlist.o ext/dom/domexception.o ext/dom/namelist.o ext/dom/processinginstruction.o ext/dom/cdatasection.o ext/dom/documentfragment.o ext/dom/domimplementation.o ext/dom/element.o ext/dom/node.o ext/dom/string_extend.o ext/dom/characterdata.o ext/dom/documenttype.o ext/dom/domimplementationlist.o ext/dom/entity.o ext/dom/nodelist.o ext/dom/text.o ext/dom/comment.o ext/dom/domconfiguration.o ext/dom/domimplementationsource.o ext/dom/entityreference.o ext/dom/notation.o ext/dom/xpath.o ext/dom/dom_iterators.o ext/dom/typeinfo.o ext/dom/domerror.o ext/dom/domlocator.o ext/dom/namednodemap.o ext/dom/userdatahandler.o ext/fileinfo/fileinfo.o ext/fileinfo/libmagic/apprentice.o ext/fileinfo/libmagic/apptype.o ext/fileinfo/libmagic/ascmagic.o ext/fileinfo/libmagic/cdf.o ext/fileinfo/libmagic/cdf_time.o ext/fileinfo/libmagic/compress.o ext/fileinfo/libmagic/encoding.o ext/fileinfo/libmagic/fsmagic.o ext/fileinfo/libmagic/funcs.o ext/fileinfo/libmagic/is_tar.o ext/fileinfo/libmagic/magic.o ext/fileinfo/libmagic/print.o ext/fileinfo/libmagic/readcdf.o ext/fileinfo/libmagic/readelf.o ext/fileinfo/libmagic/softmagic.o ext/filter/filter.o ext/filter/sanitizing_filters.o ext/filter/logical_filters.o ext/filter/callback_filter.o ext/hash/hash.o ext/hash/hash_md.o ext/hash/hash_sha.o ext/hash/hash_ripemd.o ext/hash/hash_haval.o ext/hash/hash_tiger.o ext/hash/hash_gost.o ext/hash/hash_snefru.o ext/hash/hash_whirlpool.o ext/hash/hash_adler32.o ext/hash/hash_crc32.o ext/hash/hash_fnv.o ext/hash/hash_joaat.o ext/json/json.o ext/json/utf8_decode.o ext/json/JSON_parser.o ext/pdo/pdo.o ext/pdo/pdo_dbh.o ext/pdo/pdo_stmt.o ext/pdo/pdo_sql_parser.o ext/pdo/pdo_sqlstate.o ext/pdo_sqlite/pdo_sqlite.o ext/pdo_sqlite/sqlite_driver.o ext/pdo_sqlite/sqlite_statement.o ext/phar/util.o ext/phar/tar.o ext/phar/zip.o ext/phar/stream.o ext/phar/func_interceptors.o ext/phar/dirstream.o ext/phar/phar.o ext/phar/phar_object.o ext/phar/phar_path_check.o ext/posix/posix.o ext/reflection/php_reflection.o ext/session/mod_user_class.o ext/session/session.o ext/session/mod_files.o ext/session/mod_mm.o ext/session/mod_user.o ext/simplexml/simplexml.o ext/simplexml/sxe.o ext/spl/php_spl.o ext/spl/spl_functions.o ext/spl/spl_engine.o ext/spl/spl_iterators.o ext/spl/spl_array.o ext/spl/spl_directory.o ext/spl/spl_exceptions.o ext/spl/spl_observer.o ext/spl/spl_dllist.o ext/spl/spl_heap.o ext/spl/spl_fixedarray.o ext/standard/crypt_freesec.o ext/standard/crypt_blowfish.o ext/standard/crypt_sha512.o ext/standard/crypt_sha256.o ext/standard/php_crypt_r.o ext/standard/array.o ext/standard/base64.o ext/standard/basic_functions.o ext/standard/browscap.o ext/standard/crc32.o ext/standard/crypt.o ext/standard/cyr_convert.o ext/standard/datetime.o ext/standard/dir.o ext/standard/dl.o ext/standard/dns.o ext/standard/exec.o ext/standard/file.o ext/standard/filestat.o ext/standard/flock_compat.o ext/standard/formatted_print.o ext/standard/fsock.o ext/standard/head.o ext/standard/html.o ext/standard/image.o ext/standard/info.o ext/standard/iptc.o ext/standard/lcg.o ext/standard/link.o ext/standard/mail.o ext/standard/math.o ext/standard/md5.o ext/standard/metaphone.o ext/standard/microtime.o ext/standard/pack.o ext/standard/pageinfo.o ext/standard/quot_print.o ext/standard/rand.o ext/standard/soundex.o ext/standard/string.o ext/standard/scanf.o ext/standard/syslog.o ext/standard/type.o ext/standard/uniqid.o ext/standard/url.o ext/standard/var.o ext/standard/versioning.o ext/standard/assert.o ext/standard/strnatcmp.o ext/standard/levenshtein.o ext/standard/incomplete_class.o ext/standard/url_scanner_ex.o ext/standard/ftp_fopen_wrapper.o ext/standard/http_fopen_wrapper.o ext/standard/php_fopen_wrapper.o ext/standard/credits.o ext/standard/css.o ext/standard/var_unserializer.o ext/standard/ftok.o ext/standard/sha1.o ext/standard/user_filters.o ext/standard/uuencode.o ext/standard/filters.o ext/standard/proc_open.o ext/standard/streamsfuncs.o ext/standard/http.o ext/standard/password.o ext/tokenizer/tokenizer.o ext/tokenizer/tokenizer_data.o ext/xml/xml.o ext/xml/compat.o ext/xmlreader/php_xmlreader.o ext/xmlwriter/php_xmlwriter.o TSRM/TSRM.o TSRM/tsrm_strtok_r.o TSRM/tsrm_virtual_cwd.o main/main.o main/snprintf.o main/spprintf.o main/php_sprintf.o main/fopen_wrappers.o main/alloca.o main/php_scandir.o main/php_ini.o main/SAPI.o main/rfc1867.o main/php_content_types.o main/strlcpy.o main/strlcat.o main/mergesort.o main/reentrancy.o main/php_variables.o main/php_ticks.o main/network.o main/php_open_temporary_file.o main/output.o main/getopt.o main/streams/streams.o main/streams/cast.o main/streams/memory.o main/streams/filter.o main/streams/plain_wrapper.o main/streams/userspace.o main/streams/transports.o main/streams/xp_socket.o main/streams/mmap.o main/streams/glob_wrapper.o Zend/zend_language_parser.o Zend/zend_language_scanner.o Zend/zend_ini_parser.o Zend/zend_ini_scanner.o Zend/zend_alloc.o Zend/zend_compile.o Zend/zend_constants.o Zend/zend_dynamic_array.o Zend/zend_dtrace.o Zend/zend_execute_API.o Zend/zend_highlight.o Zend/zend_llist.o Zend/zend_opcode.o Zend/zend_operators.o Zend/zend_ptr_stack.o Zend/zend_stack.o Zend/zend_variables.o Zend/zend.o Zend/zend_API.o Zend/zend_extensions.o Zend/zend_hash.o Zend/zend_list.o Zend/zend_indent.o Zend/zend_builtin_functions.o Zend/zend_sprintf.o Zend/zend_ini.o Zend/zend_qsort.o Zend/zend_multibyte.o Zend/zend_ts_hash.o Zend/zend_stream.o Zend/zend_iterators.o Zend/zend_interfaces.o Zend/zend_exceptions.o Zend/zend_strtod.o Zend/zend_gc.o Zend/zend_closures.o Zend/zend_float.o Zend/zend_string.o Zend/zend_signal.o Zend/zend_generators.o Zend/zend_objects.o Zend/zend_object_handlers.o Zend/zend_objects_API.o Zend/zend_default_classes.o Zend/zend_execute.o main/internal_functions_cli.o sapi/cgi/cgi_main.o sapi/cgi/fastcgi.o
+build sapi/cgi/cgi_main.o: phony sapi/cgi/cgi_main.lo
+build sapi/cgi/fastcgi.o: phony sapi/cgi/fastcgi.lo

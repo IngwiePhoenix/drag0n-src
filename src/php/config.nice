@@ -2,6 +2,8 @@
 #
 # Created by configure
 
-'./configure' \
-'--disable-all' \
+'/Users/Ingwie/Work/drag0n-src/src/php/configure' \
+'--prefix=/Applications/drag0n/drag0n.app/Contents/System//usr/local' \
+'--bindir=/Applications/drag0n/drag0n.app/Contents/System//bin' \
+'--without-iconv' \
 "$@"

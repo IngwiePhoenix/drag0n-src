@@ -44,13 +44,13 @@ available_tags=" CXX"
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host kevins-air.fritz.box:
+# Libtool was configured on host Ingwies-Air.local:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
 
 # Whether or not to build shared libraries.
-build_libtool_libs=yes
+build_libtool_libs=no
 
 # Whether or not to build static libraries.
 build_old_libs=yes
@@ -94,7 +94,7 @@ LD="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolcha
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm"
+NM="/Applications/drag0n/drag0n.app/Contents/System/usr/bin/nm"
 
 # A symbol stripping program
 STRIP="strip"
@@ -6772,13 +6772,13 @@ build_old_libs=`case $build_libtool_libs in yes) $echo no;; *) $echo yes;; esac`
 # End:
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
-# Libtool was configured on host kevins-air.fritz.box:
+# Libtool was configured on host Ingwies-Air.local:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
 
 # Whether or not to build shared libraries.
-build_libtool_libs=yes
+build_libtool_libs=no
 
 # Whether or not to build static libraries.
 build_old_libs=yes
@@ -6822,7 +6822,7 @@ LD="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolcha
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm"
+NM="/Applications/drag0n/drag0n.app/Contents/System/usr/bin/nm"
 
 # A symbol stripping program
 STRIP="strip"

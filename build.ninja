@@ -1,0 +1,52 @@
+# Ninja file generated using autoNinja
+
+autoNinja = 0.1
+prefix_normal = /Applications/drag0n/drag0n.app/Contents/System/usr/local
+prefix_build = /Applications/drag0n/drag0n.app/Contents/System/usr
+prefix_root = /Applications/drag0n/drag0n.app/Contents/System/
+appDir = /Applications/drag0n
+
+rule configure
+  command = cd $in && ./configure --prefix=$prefix_normal >/dev/null
+  description = Configuring: $out
+  generator = true
+rule make
+  command = cd $in && ../bin/make -s -e all
+  description = Making $out
+rule cp
+  command = cp $in $out
+  description = Copying $out --> $in
+rule mv
+  command = mv $in $out
+  description = Moving $out --> $in
+rule cpr
+  command = cp -r $in $out
+  description = Copying $out --> $in
+rule mkdir
+  command = mkdir $out
+  description = Creating folder $out
+rule exec
+  command = $SHELL -c $in
+  description = SYSTEM: $out
+rule base_compile
+  command = clang -c $in -o $out
+  description = Clang: $out
+rule base_link
+  command = clang $in -o $out
+  description = Executable: $out
+
+build src/libcurl/Makefile: configure src/libcurl
+build src/libxml/Makefile: configure src/libxml
+build src/libgpg-error/Makefile: configure src/libgpg-error
+build src/gpgme/Makefile: configure src/gpgme | src/libgpg-error/Makefile
+build /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/Dependency.o: base_compile /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/Dependency.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/DylibBundler.o: base_compile /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/DylibBundler.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/Settings.o: base_compile /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/Settings.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/Utils.o: base_compile /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/Utils.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/main.o: base_compile /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/main.cpp
+build /Users/Ingwie/Work/drag0n-src/bin/dylibbundler: base_link /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/Dependency.o /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/DylibBundler.o /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/Settings.o /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/Utils.o /Users/Ingwie/Work/drag0n-src/tools/dylibbundler/src/main.o
+build /Users/Ingwie/Work/drag0n-src/bin/ccdv: base_link /Users/Ingwie/Work/drag0n-src/src/ccdv/ccdv.c
+
+include src/php/php.ninja
+include tools/upx/upx.ninja
+

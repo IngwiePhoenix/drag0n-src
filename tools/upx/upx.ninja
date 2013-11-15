@@ -1,0 +1,69 @@
+# Ninja file generated using autoNinja
+
+autoNinja = 0.1
+
+rule cxx
+  command = c++ -c $in -o $out
+  description = CXX: $out
+rule link
+  command = g++ -lucl -lz $in -o $out
+  description = Executable: $out
+
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_file.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_file.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_init.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_init.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_none.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_none.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_screen.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_screen.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress_lzma.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress_lzma.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress_ucl.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress_ucl.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress_zlib.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress_zlib.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/except.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/except.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/file.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/file.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/filter.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/filter.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/filteri.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/filteri.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/help.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/help.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/lefile.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/lefile.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/linker.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/linker.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/main.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/main.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/mem.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/mem.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/msg.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/msg.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_armpe.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_armpe.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_com.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_com.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_djgpp2.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_djgpp2.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_elks.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_elks.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_exe.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_exe.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_elf.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_elf.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_exc.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_exc.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_interp.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_interp.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_sh.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_sh.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_mach.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_mach.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_ps1.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_ps1.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_sys.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_sys.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_tmt.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_tmt.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_tos.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_tos.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_unix.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_unix.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_vmlinx.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_vmlinx.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_vmlinz.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_vmlinz.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_w16ne.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_w16ne.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_w32pe.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_w32pe.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_w64pep.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_w64pep.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_wcle.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_wcle.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/packer.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/packer.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/packer_c.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/packer_c.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/packer_f.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/packer_f.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/packhead.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/packhead.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/packmast.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/packmast.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/pefile.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/pefile.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/pepfile.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/pepfile.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_djgpp2.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_djgpp2.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_object.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_object.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_vcsa.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_vcsa.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_win32.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_win32.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/snprintf.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/snprintf.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/stdcxx.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/stdcxx.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/ui.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/ui.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/util.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/util.cpp
+build /Users/Ingwie/Work/drag0n-src/tools/upx/src/work.o: cxx /Users/Ingwie/Work/drag0n-src/tools/upx/src/work.cpp
+build upx: link /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_file.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_init.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_none.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/c_screen.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress_lzma.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress_ucl.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/compress_zlib.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/except.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/file.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/filter.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/filteri.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/help.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/lefile.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/linker.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/main.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/mem.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/msg.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_armpe.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_com.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_djgpp2.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_elks.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_exe.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_elf.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_exc.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_interp.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_lx_sh.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_mach.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_ps1.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_sys.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_tmt.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_tos.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_unix.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_vmlinx.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_vmlinz.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_w16ne.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_w32pe.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_w64pep.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/p_wcle.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/packer.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/packer_c.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/packer_f.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/packhead.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/packmast.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/pefile.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/pepfile.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_djgpp2.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_object.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_vcsa.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/s_win32.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/snprintf.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/stdcxx.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/ui.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/util.o /Users/Ingwie/Work/drag0n-src/tools/upx/src/work.o
+
+

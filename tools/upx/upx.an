@@ -1,0 +1,32 @@
+<?php
+
+# Generator for dylibbundler
+
+check('c++',4);
+checkLib('z', 'c++');
+checkLib('ucl', 'c++', "cpp", '<ucl/uclconf.h>');
+
+rule(
+	'cxx',
+	'c++ -c $in -o $out',
+	'CXX: $out'
+);
+
+rule(
+	'link',
+	'g++ -lucl -lz $in -o $out',
+	'Executable: $out'
+);
+
+$objs=[];
+
+chdir(getcwd());
+foreach(glob("./src/*.cpp") as $in) {
+	$in = realpath($in);
+	$out = out($in);
+	$objs[]=$out;
+	echo "=> Adding <$in> -> <$out>\n"; 
+	source("cxx", $in, $out);
+}
+
+source("link", implode(" ",$objs), 'upx');

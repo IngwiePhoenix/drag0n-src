@@ -27,19 +27,18 @@ export LIBS="$(gpgme-config --libs) $(libgcrypt-config --libs) $(xml2-config --l
 	--with-config-file-path="" \
 	--with-config-file-scan-dir="" \
 	--enable-maintainer-zts \
-	--with-wxwidgets \
 	--enable-pthreads \
-	--enable-bcompiler \
 	--with-ssh2 \
 	--with-gpg \
 	--with-gnupg \
 	--with-ncurses \
+	--with-zlib \
 	--enable-mbstring \
 	--enable-sockets \
 	--enable-ftp \
 	--enable-soap \
 	--enable-zip \
-	--enable-opcache \
+	--disable-opcache \
 	--with-tidy \
 	--with-libedit \
 	--with-curl=/usr/local \
@@ -47,7 +46,6 @@ export LIBS="$(gpgme-config --libs) $(libgcrypt-config --libs) $(xml2-config --l
 	--with-gd \
 	--with-pear \
 	--with-libedit \
-	--enable-intl \
 	--enable-soap \
 	--enable-libxml "$*"
 exit 0
@@ -55,3 +53,5 @@ exit 0
 # not working
 	--with-wxwidgets \
 	--with-wxwidgets-monolithic \
+	--enable-bcompiler \
+	--enable-intl \

@@ -1,0 +1,22 @@
+<?php
+
+setVar(
+	'cflags',
+	'-O -pipe -s -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -DBREAK_HANDLER -DUNICODE -D_UNICODE'
+);
+setVar('inc','-I.');
+setVar('extraInc',' ');
+
+rule('cxx', 'g++ $cflags $inc $extraInc -c $in -o $out');
+rule('cc', 'gcc $cflags $inc $extraInc -c $in -o $out');
+
+# Let's handle the CPP folder first.
+$CPPobjs=[];
+foreach(glob("./CPP/myWindows/*.cpp") as $in) {
+	echo "-> Adding $cpp";
+	source(
+		'cxx', $in, out($in),
+		['extraInc'=>'-I./CPP/myWindows -I./CPP -I./CPP/include_windows']
+	);
+	$CPPobjs[]=out($in);
+}
